@@ -1,0 +1,14 @@
+﻿node_modules/
+dist/
+data/
+reports/
+*.zip
+*.csv
+*.json
+*.xlsx
+*.log
+__pycache__/
+*.pyc
+.env
+.env.*
+Binance data archived/
