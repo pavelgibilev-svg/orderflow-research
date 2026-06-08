@@ -1,0 +1,40 @@
+{
+  "name": "orderflow-research",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Orderflow L2 Strategy research/backtest module: streaming Tardis CSV gzip reader, order book replay, feature engine, zone detector, and 2% target checker.",
+  "type": "module",
+  "scripts": {
+    "inspect:data": "tsx src/cli/inspectData.ts",
+    "backtest:day": "tsx src/cli/backtestDay.ts",
+    "backtest:range": "tsx src/cli/backtestDay.ts --range",
+    "export:snapshots": "tsx src/cli/exportSnapshots.ts",
+    "validate:tardis": "tsx src/cli/validateTardis.ts",
+    "backtest:sample-2026": "tsx src/cli/sampleBacktest2026.ts",
+    "report:final-2026": "tsx src/cli/finalReport.ts",
+    "db:migrate": "tsx src/cli/dbMigrate.ts",
+    "db:check": "tsx src/cli/dbCheck.ts",
+    "live:recorder": "tsx src/cli/liveRecorder.ts",
+    "live:recorder:dev": "tsx watch src/cli/liveRecorder.ts",
+    "live:health": "tsx src/cli/liveHealth.ts",
+    "live:acceptance": "tsx src/cli/liveAcceptance.ts",
+    "live:replay:from-db": "tsx src/cli/backtestDb.ts",
+    "backtest:db": "tsx src/cli/backtestDb.ts",
+    "backtest:okx-technical": "tsx src/cli/backtestOkxTechnical.ts",
+    "download:tardis-2026": "bash scripts/download-tardis-2026-ytd-except-may.sh",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json --noEmit"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {}
+}

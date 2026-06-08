@@ -1,0 +1,57 @@
+{
+  "symbol": "BTCUSDT",
+  "exchange": "binance-futures",
+  "targetPct": 2.0,
+  "featureIntervalSec": 1,
+  "snapshotDepthLevels": 100,
+  "depthPctBuckets": [0.05, 0.10, 0.25, 0.50, 1.0, 2.0],
+  "tradeWindowsSec": [5, 15, 60, 300],
+  "zone": {
+    "minCandidateDurationMin": 3,
+    "minConfirmedDurationMin": 10,
+    "maxFormationDurationMin": 60,
+    "minAbsorptionCycles": 3,
+    "maxNoProgressPct": 0.20,
+    "minAbsorptionScore": 0.60,
+    "minLiquidityVoidScore": 0.55,
+    "minTriggerScore": 0.65,
+    "candidate": {
+      "minSidedPressure": 0.55,
+      "minRefillScore": 0.40,
+      "rangeCompressionPct": 0.15
+    },
+    "confirmed": {
+      "minDefendedPersistenceSec": 180,
+      "minOppositeThinningScore": 0.40
+    },
+    "trigger": {
+      "minBreakDistancePct": 0.05,
+      "minAggressiveFlowMultiplier": 1.4
+    }
+  },
+  "targetChecker": {
+    "horizons": ["4h", "8h", "24h"],
+    "referencePrice": "triggerPrice"
+  },
+  "quality": {
+    "maxSpreadPct": 0.20,
+    "maxGapMs": 5000,
+    "requireBestBidAsk": true
+  },
+  "replay": {
+    "warmupSeconds": 30,
+    "logEveryRows": 1000000
+  },
+  "deduplication": {
+    "enabled": true,
+    "sameDirectionOverlapSuppression": true,
+    "cooldownMinutesAfterResolve": 30,
+    "priceOverlapMinPct": 0.25
+  },
+  "moveClustering": {
+    "enabled": true,
+    "clusterReachedZones": true,
+    "moveClusterGapMinutes": 120,
+    "sameDirectionOnly": true
+  }
+}

@@ -4,7 +4,7 @@ data/
 reports/
 *.zip
 *.csv
-*.json
+*.json1
 *.xlsx
 *.log
 __pycache__/
@@ -12,3 +12,4 @@ __pycache__/
 .env
 .env.*
 Binance data archived/
+!.env.example
