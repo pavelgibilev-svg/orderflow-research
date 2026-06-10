@@ -10,7 +10,8 @@ WINDOW="${1:-3h}"
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT"
 
-DATES=$("C:/Users/gibilev/AppData/Local/Programs/Python/Python312/python.exe" -c '
+PYTHON="${PYTHON:-python}"
+DATES=$("$PYTHON" -c '
 import json
 d = json.load(open("reports/OKX_SIX_SELECTED_DATES.json","r",encoding="utf-8"))
 for c in d["chosen"]:

@@ -23,7 +23,8 @@ Expected local handover folder:
 
 Expected cache:
 
-- reports/okx-may-early/FEATURE_CACHE.json
+- reports/okx-may-early/OKX_2026_05_01_10_FEATURE_CACHE.json  (canonical, 382 zones; used by taxonomy, unique-move audit, tier-A, successful mining)
+- reports/okx-may-early/FEATURE_CACHE.json  (byte-identical copy/alias of the canonical cache)
 
 Expected daily zones:
 

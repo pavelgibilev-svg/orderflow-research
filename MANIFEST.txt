@@ -1,73 +1,118 @@
 ORDERFLOW RESEARCH HANDOVER MANIFEST
+====================================
 
-Branch:
-main
+Source
+------
+Local Windows workspace C:\Users\gibilev\orderflow-research.
+Branch:  main
+Commit:  a84cc8f  ("Add handover metadata"); this manifest refresh is committed on top of it.
+Lineage: fix/add-missing-ts-runtime is fully merged into main (it is an ancestor of main).
+         main = fix/add-missing-ts-runtime + "De-hardcode Python scripts root paths" + handover metadata.
+         `git merge fix/add-missing-ts-runtime` reports "Already up to date".
 
-Commit:
-de564f
-
-Source:
-Local Windows workspace C:\Users\gibilev\orderflow-research after merge of fix/add-missing-ts-runtime into main.
-
-Code folders included in Git:
-- src/data/
-- src/reports/
-- scripts/
-- config/
-
-Root files included in Git:
+What is in Git (code only)
+--------------------------
+Root files:
 - package.json
 - package-lock.json
 - tsconfig.json
 - config/strategy.default.json
 - .env.example
-- requirements.txt
+- requirements.txt        (pandas, numpy, openpyxl)
 - DATA_HANDOVER.md
 - MANIFEST.txt
+- .gitignore              (ignores /reports/, /data/, *.csv, *.xlsx, *.zip, __pycache__/, *.pyc, .env*; keeps .env.example. No *.json1 entry.)
 
-Local report folders:
-- reports/okx-may-early/
-- reports/okx-may*/
-- reports/okx_3h_snapshots/ if present
+Code folders:
+- src/data/               (TS runtime: tardisCsvLoader, marketDataSource, clickhouseDataSource, fileResolver, schema, time, tardisUrls, ...)
+- src/reports/            (TS runtime: csvWriter, jsonWriter, markdownReport, reportWriter, validateTardisReport, sampleRunReport)
+- scripts/**              (Python research scripts: data-sanity, strategy-calibration, shadow, okx, okx-direct, binance-live, research)
+- config/
 
-Dates covered by requested OKX report set:
-- 2026-05-03 through 2026-05-20
+NOT in Git (handed over as a separate local archive)
+----------------------------------------------------
+All of reports/ and data/ are intentionally git-ignored. The artifacts below live only
+on disk and must be bundled into the handover archive separately from the repo.
 
-Cache files:
+Archive folders
+---------------
+- reports/okx-may-early/                         primary OKX 2026-05-03..20 research set
+- reports/okx-may-early/BTC-USDT-SWAP_2026-05-DD/ per-day engine output, DD = 03..20 (18 days)
+- reports/okx-may/                               earlier OKX May working set (if shipping the full pool)
+
+Dates covered
+-------------
+OKX BTC-USDT-SWAP, 2026-05-03 through 2026-05-20 (18 days).
+
+CACHE files (inputs / intermediate state)
+-----------------------------------------
+- reports/okx-may-early/OKX_2026_05_01_10_FEATURE_CACHE.json
+      CANONICAL feature cache (382 zones). This exact file is the input used by:
+      taxonomy, unique-move/duplicate audit, tier-A selector, successful-unique-move mining.
 - reports/okx-may-early/FEATURE_CACHE.json
-- reports/okx-may*/BTC-USDT-SWAP_/zones.json
-- other FEATURE/cache/zones JSON files under reports/ if present
+      Byte-identical copy/alias of the canonical cache (sha256 matches) for the generic path.
+- reports/okx-may-early/BTC-USDT-SWAP_2026-05-DD/zones.json   (18 files)
+      Per-day frozen-engine zone output (also zones.csv, daily_summary.csv, report.md, config.echo.json).
 
-Report files:
-- OKX_2026_05_03_20_FULL_STATISTICS_APPENDIX.*
-- UNIQUE_MOVE_CLUSTER_AUDIT.*
-- STRONG_ZONE_TAXONOMY.*
-- LIVE_SELECTOR_FAILURE_AUDIT.*
-- MODULE_COVERAGE_MAP.*
-- CANDIDATE_MODULE_PROTOTYPE_RESULTS.*
-- TIER_A_SELECTOR_RESULTS.*
+REPORT files (outputs) under reports/okx-may-early/
+---------------------------------------------------
+Statistics + audits:
+- OKX_2026_05_03_20_FULL_STATISTICS_APPENDIX.{md,json,xlsx}
+- OKX_2026_05_03_20_ALL_ZONES.csv
+- OKX_2026_05_03_20_PER_DAY.csv
+- OKX_2026_05_01_10_DATA_AUDIT.{md,json,csv}
+- OKX_2026_05_01_10_ENGINE_SUMMARY.{md,json,csv}
+- OKX_2026_05_01_10_STRONG_MOVE_LABELS.{md,json,csv}
+Unique-move / taxonomy / module coverage:
+- UNIQUE_MOVE_CLUSTER_AUDIT.{md,json,csv,xlsx}
+- STRONG_ZONE_TAXONOMY.{md,json,csv,xlsx} + STRONG_ZONE_TAXONOMY_FINAL.json
+- LIVE_SELECTOR_FAILURE_AUDIT.{json,csv}
+- MODULE_COVERAGE_MAP.{json,csv}
+- CANDIDATE_MODULE_PROTOTYPE_RESULTS.{json,csv}
+- SETUP_FAMILY_FEATURE_SEPARATION.{json,csv}
+Tier-A (in-sample demo) + successful-move mining:
+- TIER_A_SELECTOR_RESULTS.{md,json,csv,xlsx}
 - TIER_A_BEST_RULE_TRADES.csv
-- SUCCESSFUL_UNIQUE_MOVE_DATASET.*
-- SUCCESSFUL_UNIQUE_MOVE_MINING.*
-- POSITIVE_FEATURE_MINING.*
-- SUCCESSFUL_RULE_MINING_RESULTS.*
-- TIER_A_SUCCESSFUL_SELECTOR_RESULTS.*
-- TIER_A_ANTI_OVERFIT_CHECK.*
-- PER_DATE_PATTERN_CASEBOOK.*
-- all_zones csv/json if present
-- strong zones casebook if present
-- rejected zones analysis if present
-- would-alert trades if present
+- TIER_A_UNIQUE_OPPORTUNITY_TABLE.{json,csv}
+- SUCCESSFUL_UNIQUE_MOVE_DATASET.{json,csv}
+- SUCCESSFUL_UNIQUE_MOVE_MINING.{md,xlsx} + SUCCESSFUL_UNIQUE_MOVE_MINING_FINAL.json
+- POSITIVE_FEATURE_MINING.{json,csv}
+- SUCCESSFUL_RULE_MINING_RESULTS.{json,csv}
+- TIER_A_SUCCESSFUL_SELECTOR_RESULTS.{json,csv}
+- TIER_A_ANTI_OVERFIT_CHECK.{json,csv}
+- PER_DATE_PATTERN_CASEBOOK.json
+- POSITIVE_AND_REJECT_FILTER_ARCHITECTURE.json
+Casebooks / would-alert / rejected (all PRESENT):
+- OKX_EARLY_MAY_STRONG_ZONES_CASEBOOK.{json,csv,xlsx}
+- OKX_EARLY_MAY_REJECTED_ZONES_ANALYSIS.{json,csv}
+- OKX_EARLY_MAY_WOULD_ALERT_TRADES.{json,csv,xlsx}
+- TU_LONG_MODULE_RESEARCH.{md,json,csv} + TU_LONG_ALL_SETUP_ZONES_CASEBOOK.{json,csv,xlsx}
+- TD_SHORT_ON_OKX_MAY_EARLY_SANITY.{md,json,csv}
 
-Commands used / verified:
-- npm install
-- npx tsc --noEmit
-- npm test
-- python -m compileall scripts -q
+How it was produced (key entrypoints)
+-------------------------------------
+Engine replay + cache build (frozen engine; TP target 2%, horizons 4h/8h/24h):
+- python scripts/data-sanity/okx_early_may_convert.py
+- python scripts/data-sanity/okx_early_engine_chain.py
+- python scripts/data-sanity/okx_early_feature_build.py        -> OKX_2026_05_01_10_FEATURE_CACHE.json
+Analyses (all read the feature cache above; decisions causal <= confirmedTs; 2.5/3% are quality labels only):
+- python scripts/data-sanity/okx_early_appendix.py             -> FULL_STATISTICS_APPENDIX, ALL_ZONES, casebooks, would-alert, rejected
+- python scripts/data-sanity/strong_zone_taxonomy.py           -> STRONG_ZONE_TAXONOMY, LIVE_SELECTOR_FAILURE_AUDIT, MODULE_COVERAGE_MAP, prototypes
+- python scripts/data-sanity/unique_move_cluster_audit.py      -> UNIQUE_MOVE_CLUSTER_AUDIT
+- python scripts/data-sanity/tier_a_selector.py                -> TIER_A_SELECTOR_RESULTS, TIER_A_BEST_RULE_TRADES, TIER_A_UNIQUE_OPPORTUNITY_TABLE
+- python scripts/data-sanity/successful_unique_move_mining.py  -> SUCCESSFUL_*, POSITIVE_FEATURE_MINING, PER_DATE_PATTERN_CASEBOOK, architecture
 
-Python runtime:
-- Python scripts de-hardcoded from local C:/Users/gibilev paths.
-- Scripts should use ORDERFLOW_ROOT or auto-root detection.
+Verification (all PASS as of this manifest)
+-------------------------------------------
+- npm install                       -> up to date
+- npx tsc --noEmit                  -> PASS (0 errors)
+- npm test                          -> 14 files / 95 tests passed
+- pip install -r requirements.txt   -> satisfied (pandas, numpy, openpyxl)
+- python -m compileall scripts -q   -> PASS
 
-Notes:
-- Large reports/ artifacts are intentionally ignored by Git and should be handed over as local archive/package when required.
+Portability notes
+-----------------
+- All Python scripts resolve ROOT via auto-detection (nearest parent containing package.json + scripts/);
+  no hardcoded C:/Users/gibilev/orderflow-research paths remain in source.
+- scripts/okx/run_six_replays.sh uses ${PYTHON:-python} instead of a hardcoded python.exe path.
+- Set ORDERFLOW_ROOT to override auto-root if the repo is relocated.
