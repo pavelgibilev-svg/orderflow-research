@@ -30,7 +30,7 @@ from canonical_ledger import (
     build_buckets_from_trades_csv, canonical_ledger_walk, simulate_canonical_trade,
 )
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS = ROOT / "reports"
 REP_OKX = REPORTS / "okx-direct"
 REP_OUT = REPORTS / "strategy-calibration"

@@ -15,7 +15,7 @@ import os
 import sys
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS_DIR = ROOT / "reports/okx-direct"
 DATES_DEFAULT = [f"2026-03-{i:02d}" for i in range(2, 16)]  # 03-02 .. 03-15
 

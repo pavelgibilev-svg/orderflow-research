@@ -6,7 +6,7 @@ import sys
 import zipfile
 from pathlib import Path
 
-ROOT = Path(r"C:\Users\gibilev\orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 SRC = ROOT / "dist" / "orderflow-live-recorder-deploy"
 OUT = ROOT / "dist" / "orderflow-live-recorder-deploy.zip"
 

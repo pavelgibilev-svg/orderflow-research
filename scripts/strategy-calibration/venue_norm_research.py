@@ -16,7 +16,7 @@ import csv, json, math, statistics as st, sys, datetime as dt
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OKX_CACHE = ROOT / "reports/strategy-calibration/OKX_MARCH_DIAG_FEATURE_CACHE.json"
 BNC_CACHE = ROOT / "reports/binance-oos/BINANCE_10D_DIAG_FEATURE_CACHE.json"
 OKX_OUT = ROOT / "reports/strategy-calibration"

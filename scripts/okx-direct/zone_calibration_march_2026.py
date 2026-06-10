@@ -26,7 +26,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Iterable
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS = ROOT / "reports/okx-direct"
 DATES = [f"2026-03-{i:02d}" for i in range(2, 16)]  # 14 contiguous days
 

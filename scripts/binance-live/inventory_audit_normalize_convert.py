@@ -26,7 +26,7 @@ import time
 from pathlib import Path
 from typing import Any, Iterable
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 STAGING = ROOT / "data/binance-live-archives/staging"
 RAW = ROOT / "data/binance-live-archives/raw"
 NORM = ROOT / "data/binance-live-normalized/binance-futures/BTCUSDT"

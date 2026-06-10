@@ -26,7 +26,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 DATA_ROOT = ROOT / "data" / "okx-historical" / "BTC-USDT-SWAP"
 REPORTS = ROOT / "reports"
 HORIZONS_MS = {"4h": 4 * 3_600_000, "8h": 8 * 3_600_000, "24h": 24 * 3_600_000}

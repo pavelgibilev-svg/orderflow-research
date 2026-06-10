@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS = ROOT / "reports"
 DATES = [
     "2024-01-01",

@@ -7,7 +7,7 @@ as the headline. The user's goal is PRECISION (70-80% winrate). Also, selectors 
 import json, datetime as dt
 from pathlib import Path
 
-REP = Path("C:/Users/gibilev/orderflow-research/reports/strategy-calibration")
+REP = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists()) / "reports" / "strategy-calibration"
 
 
 def now_iso():

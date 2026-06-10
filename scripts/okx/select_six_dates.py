@@ -16,7 +16,7 @@ import json
 import sys
 from pathlib import Path
 
-REPORTS = Path("C:/Users/gibilev/orderflow-research/reports")
+REPORTS = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists()) / "reports"
 
 
 def main() -> int:

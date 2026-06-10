@@ -16,7 +16,7 @@ from march_target_zone_fuel import (load_dataset, explainable_score_l2_dyn,
     classify_setup, iso_to_sec, ALL_DATES, FIRST_HALF, SECOND_HALF, DATA_ROOT,
     TARGET_PCT, STOP_PCT, COST_PCT, TIMEOUT_HOURS, metrics)
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REP_OUT = ROOT / "reports/strategy-calibration"
 OI_CACHE = DATA_ROOT / "_okx_oi_daily_rubik.csv"
 FUND_CACHE = DATA_ROOT / "_okx_funding_history.csv"

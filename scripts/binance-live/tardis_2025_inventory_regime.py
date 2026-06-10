@@ -22,7 +22,7 @@ import sys
 from collections import deque
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 DATA_ROOT = ROOT / "data/tardis/binance-futures/BTCUSDT"
 REPORTS = ROOT / "reports/binance-tardis"
 REPORTS.mkdir(parents=True, exist_ok=True)

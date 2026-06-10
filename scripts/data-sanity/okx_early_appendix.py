@@ -9,7 +9,7 @@ import csv, gzip, json, statistics as st, sys, datetime as dt
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 sys.path.insert(0, str(ROOT / "scripts/strategy-calibration")); sys.path.insert(0, str(ROOT / "scripts/shadow"))
 import venue_norm_research as V
 import td_short_shadow_observer as OBS

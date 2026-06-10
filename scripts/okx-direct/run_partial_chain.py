@@ -18,11 +18,11 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS_OKX_DIRECT = ROOT / "reports/okx-direct"
 REPORTS_OKX_DIRECT.mkdir(parents=True, exist_ok=True)
 LOG = ROOT / "data/okx-historical/_okx_direct_partial_chain.log"
-PY = "C:/Users/gibilev/AppData/Local/Programs/Python/Python312/python.exe"
+PY = "python"
 
 
 def log(msg: str) -> None:

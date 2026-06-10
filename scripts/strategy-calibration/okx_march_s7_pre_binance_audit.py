@@ -19,7 +19,7 @@ from march_target_zone_fuel import (load_dataset, explainable_score_l2_dyn,
                                     select_topn_per_day, iso_to_sec, ALL_DATES,
                                     FIRST_HALF, SECOND_HALF, DATA_ROOT)
 
-REP_OUT = Path("C:/Users/gibilev/orderflow-research/reports/strategy-calibration")
+REP_OUT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists()) / "reports" / "strategy-calibration"
 COST_PCT = 0.14
 TARGET_PCT = 2.0
 STOP_PCT = 1.5

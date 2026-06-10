@@ -24,7 +24,7 @@ import tarfile
 from pathlib import Path
 from typing import Dict
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 ARCHIVE = ROOT / "data/okx-direct/BTC-USDT-SWAP/2026-03/raw/orderbook/BTC-USDT-SWAP-L2orderbook-400lv-2026-03-14.tar.gz"
 REPORTS = ROOT / "reports" / "okx-direct"
 REPORTS.mkdir(parents=True, exist_ok=True)

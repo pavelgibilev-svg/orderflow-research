@@ -12,7 +12,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REP_OKX = ROOT / "reports/okx-direct"
 REP_OUT = ROOT / "reports/strategy-calibration"
 REP_OUT.mkdir(parents=True, exist_ok=True)

@@ -35,7 +35,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS_LIVE = ROOT / "reports/binance-live"
 
 PRICE_BAND_PCT = 1.0

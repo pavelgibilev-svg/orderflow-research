@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "strategy-calibrati
 from canonical_ledger import (Bucket, build_buckets_from_trades_csv, Signal,
                               ExecutionConfig, simulate_canonical_trade)
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 TARDIS = ROOT / "data/binance-historical/BTCUSDT"
 ZONES_DIR = ROOT / "reports/binance-live"
 OUT = ROOT / "reports/binance-oos"

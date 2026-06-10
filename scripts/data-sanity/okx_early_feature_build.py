@@ -3,7 +3,7 @@ from __future__ import annotations
 import json, sys, time, importlib.util, bisect
 from collections import defaultdict
 from pathlib import Path
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 BLIVE = ROOT/"scripts/binance-live"; SCAL = ROOT/"scripts/strategy-calibration"
 sys.path.insert(0,str(BLIVE)); sys.path.insert(0,str(SCAL))
 import binance_oos_features_rs as B

@@ -12,7 +12,7 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS_TARDIS = ROOT / "reports/binance-tardis"
 REPORTS_TARDIS.mkdir(parents=True, exist_ok=True)
 LOG = ROOT / "data/tardis/_binance_tardis_2025_chain.log"

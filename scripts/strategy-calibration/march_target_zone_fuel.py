@@ -24,7 +24,7 @@ from typing import Optional
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from canonical_ledger import Bucket, build_buckets_from_trades_csv
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REP_OUT = ROOT / "reports/strategy-calibration"
 DATA_ROOT = ROOT / "data/okx-historical/BTC-USDT-SWAP"
 

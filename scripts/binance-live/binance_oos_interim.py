@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import binance_oos_features_rs as B
 from canonical_ledger import build_buckets_from_trades_csv
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OUT = ROOT / "reports/binance-oos"
 TARDIS = ROOT / "data/binance-historical/BTCUSDT"
 ALL10 = [f"2026-05-{d:02d}" for d in range(21,31)]

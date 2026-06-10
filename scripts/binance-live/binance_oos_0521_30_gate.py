@@ -11,7 +11,7 @@ from __future__ import annotations
 import csv, gzip, hashlib, json, zipfile, datetime as dt
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OUT = ROOT / "reports/binance-oos"
 OUT.mkdir(parents=True, exist_ok=True)
 DATA = ROOT / "data"

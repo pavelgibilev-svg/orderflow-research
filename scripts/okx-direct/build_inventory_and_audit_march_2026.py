@@ -25,7 +25,7 @@ import time
 import zipfile
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 RAW = ROOT / "data" / "okx-direct" / "BTC-USDT-SWAP" / "2026-03" / "raw"
 REPORTS = ROOT / "reports" / "okx-direct"
 REPORTS.mkdir(parents=True, exist_ok=True)

@@ -16,7 +16,7 @@ from march_target_zone_fuel import (load_dataset, explainable_score_l2_dyn,
     simulate_trade, classify_reason, metrics, ALL_DATES, FIRST_HALF, SECOND_HALF,
     DATA_ROOT, iso_to_sec, TARGET_PCT, STOP_PCT)
 
-REP_OUT = Path("C:/Users/gibilev/orderflow-research/reports/strategy-calibration")
+REP_OUT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists()) / "reports" / "strategy-calibration"
 def now_iso(): return dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
 
 

@@ -25,7 +25,7 @@ from canonical_ledger import (Bucket, build_buckets_from_trades_csv, Signal,
                               ExecutionConfig, simulate_canonical_trade,
                               aggregate as agg_trades, aggregate_after_cost)
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS = ROOT / "reports"
 REP_OUT = REPORTS / "strategy-calibration"
 REP_OUT.mkdir(parents=True, exist_ok=True)

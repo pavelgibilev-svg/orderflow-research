@@ -2,7 +2,7 @@
 from __future__ import annotations
 import json, shutil, subprocess, sys, time
 from pathlib import Path
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 DATA = ROOT / "data/okx-historical/BTC-USDT-SWAP"
 OUT = ROOT / "reports/okx-may-early"; OUT.mkdir(parents=True, exist_ok=True)
 DATES = [f"2026-05-{d:02d}" for d in range(3, 21)]

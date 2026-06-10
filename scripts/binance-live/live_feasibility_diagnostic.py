@@ -21,7 +21,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 TARDIS_ROOT = ROOT / "data/binance-historical/BTCUSDT"
 REPORTS_LIVE = ROOT / "reports/binance-live"
 DATES = ["2026-05-17", "2026-05-18", "2026-05-19", "2026-05-20"]

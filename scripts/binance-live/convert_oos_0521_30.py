@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import inventory_audit_normalize_convert as conv
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 STAGE = ROOT / "data/binance-live-archives/staging/OFFRW_0521_30/OFFRW"
 NORM = ROOT / "data/binance-live-normalized/binance-futures/BTCUSDT"
 TARDIS_OUT = ROOT / "data/binance-historical/BTCUSDT"

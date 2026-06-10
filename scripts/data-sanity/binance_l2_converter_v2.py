@@ -107,7 +107,7 @@ def convert_day_v3(raw_depth_path: Path, snapshots_path: Path, out_path: Path) -
 # ---------------- driver: re-convert 2026-05-21..30 from staging zips ----------------
 def main():
     import zipfile, shutil
-    ROOT = Path("C:/Users/gibilev/orderflow-research")
+    ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
     STAGE = ROOT / "data/binance-live-archives/staging/OFFRW_0521_30/OFFRW"
     TMP = ROOT / "data/binance-live-normalized/_reconv_tmp"
     OUT = ROOT / "data/binance-historical/BTCUSDT"

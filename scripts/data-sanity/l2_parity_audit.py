@@ -13,7 +13,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import okx_open_converter as OKX
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OKX_DIR = ROOT / "data/okx may 2026"
 BNC_L2 = ROOT / "data/binance-historical/BTCUSDT"
 OKX_OUT_DATA = ROOT / "data/okx-open-historical/BTC-USDT-SWAP"

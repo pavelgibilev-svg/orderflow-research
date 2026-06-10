@@ -8,7 +8,7 @@ from __future__ import annotations
 import csv, gzip, json, statistics as st, sys, datetime as dt
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OKX = ROOT / "data/okx-historical/BTC-USDT-SWAP"
 BNC = ROOT / "data/binance-historical/BTCUSDT"
 OUT = ROOT / "reports/data-sanity"

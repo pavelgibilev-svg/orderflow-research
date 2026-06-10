@@ -14,7 +14,7 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS = ROOT / "reports"
 OKX_ROOT = ROOT / "data" / "okx-historical" / "BTC-USDT-SWAP"
 THREE_H_SNAPS = REPORTS / "okx_3h_snapshots"

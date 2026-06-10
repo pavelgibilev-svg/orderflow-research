@@ -26,7 +26,7 @@ sys.path.insert(0, str(HERE))
 import binance_oos_features_rs as B
 from canonical_ledger import build_buckets_from_trades_csv
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OUT = ROOT / "reports/binance-oos"
 TARDIS = ROOT / "data/binance-historical/BTCUSDT"
 ZONES_DIR = ROOT / "reports/binance-live"

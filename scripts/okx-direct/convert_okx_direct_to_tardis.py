@@ -49,7 +49,7 @@ import time
 import zipfile
 from pathlib import Path
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OB_RAW = ROOT / "data/okx-direct/BTC-USDT-SWAP/2026-03/raw/orderbook"
 TR_RAW = ROOT / "data/okx-direct/BTC-USDT-SWAP/2026-03/raw/trades"
 OUT_ROOT = ROOT / "data/okx-historical/BTC-USDT-SWAP"

@@ -42,7 +42,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 REPORTS = ROOT / "reports/okx-direct"
 DATES = ["2026-03-11", "2026-03-12", "2026-03-13"]
 PRICE_BAND_PCT_FOR_CONTINUATION = 2.0   # +/- 2 % of zone midpoint => "continuation" proxy

@@ -24,7 +24,7 @@ import importlib.util
 _spec = importlib.util.spec_from_file_location("b10d", str(HERE.parents[0] / "binance-live" / "binance_10d_diag.py"))
 b10d = importlib.util.module_from_spec(_spec); _spec.loader.exec_module(b10d)
 
-ROOT = Path("C:/Users/gibilev/orderflow-research")
+ROOT = next(p for p in Path(__file__).resolve().parents if (p / "package.json").exists() and (p / "scripts").exists())
 OKX_TRADES = ROOT / "data/okx-historical/BTC-USDT-SWAP"
 FEAT_CSV = ROOT / "reports/strategy-calibration/MARCH_DYNAMIC_L2_FEATURE_DATASET.csv"
 CACHE = ROOT / "reports/strategy-calibration/OKX_MARCH_DIAG_FEATURE_CACHE.json"
