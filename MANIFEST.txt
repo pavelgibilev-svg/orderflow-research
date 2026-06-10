@@ -1,0 +1,73 @@
+ORDERFLOW RESEARCH HANDOVER MANIFEST
+
+Branch:
+main
+
+Commit:
+de564f
+
+Source:
+Local Windows workspace C:\Users\gibilev\orderflow-research after merge of fix/add-missing-ts-runtime into main.
+
+Code folders included in Git:
+- src/data/
+- src/reports/
+- scripts/
+- config/
+
+Root files included in Git:
+- package.json
+- package-lock.json
+- tsconfig.json
+- config/strategy.default.json
+- .env.example
+- requirements.txt
+- DATA_HANDOVER.md
+- MANIFEST.txt
+
+Local report folders:
+- reports/okx-may-early/
+- reports/okx-may*/
+- reports/okx_3h_snapshots/ if present
+
+Dates covered by requested OKX report set:
+- 2026-05-03 through 2026-05-20
+
+Cache files:
+- reports/okx-may-early/FEATURE_CACHE.json
+- reports/okx-may*/BTC-USDT-SWAP_/zones.json
+- other FEATURE/cache/zones JSON files under reports/ if present
+
+Report files:
+- OKX_2026_05_03_20_FULL_STATISTICS_APPENDIX.*
+- UNIQUE_MOVE_CLUSTER_AUDIT.*
+- STRONG_ZONE_TAXONOMY.*
+- LIVE_SELECTOR_FAILURE_AUDIT.*
+- MODULE_COVERAGE_MAP.*
+- CANDIDATE_MODULE_PROTOTYPE_RESULTS.*
+- TIER_A_SELECTOR_RESULTS.*
+- TIER_A_BEST_RULE_TRADES.csv
+- SUCCESSFUL_UNIQUE_MOVE_DATASET.*
+- SUCCESSFUL_UNIQUE_MOVE_MINING.*
+- POSITIVE_FEATURE_MINING.*
+- SUCCESSFUL_RULE_MINING_RESULTS.*
+- TIER_A_SUCCESSFUL_SELECTOR_RESULTS.*
+- TIER_A_ANTI_OVERFIT_CHECK.*
+- PER_DATE_PATTERN_CASEBOOK.*
+- all_zones csv/json if present
+- strong zones casebook if present
+- rejected zones analysis if present
+- would-alert trades if present
+
+Commands used / verified:
+- npm install
+- npx tsc --noEmit
+- npm test
+- python -m compileall scripts -q
+
+Python runtime:
+- Python scripts de-hardcoded from local C:/Users/gibilev paths.
+- Scripts should use ORDERFLOW_ROOT or auto-root detection.
+
+Notes:
+- Large reports/ artifacts are intentionally ignored by Git and should be handed over as local archive/package when required.
