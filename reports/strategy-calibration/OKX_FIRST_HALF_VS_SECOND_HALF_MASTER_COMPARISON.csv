@@ -1,0 +1,14 @@
+metric,first_half,second_half
+A_trigger_stop_1pct_n_trades,44,43
+A_winrate_pct,22.73,20.93
+A_expectancy_pre_cost,-0.1782,-0.1341
+A_pf_pre_cost,0.732,0.777
+A_expectancy_after_cost,,-0.2741
+A_pf_after_cost,,0.607
+B_delay15_stop15_n_trades,30,33
+B_winrate_pct,40.0,24.24
+B_expectancy_pre_cost,0.471,-0.0845
+B_pf_pre_cost,2.053,0.867
+B_expectancy_after_cost,,-0.2245
+B_pf_after_cost,,0.689
+B_holds,YES,NO

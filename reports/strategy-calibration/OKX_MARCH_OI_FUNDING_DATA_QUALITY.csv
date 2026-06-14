@@ -1,0 +1,3 @@
+dataset,rows_march,first,last,median_interval_sec,max_gap_sec,granularity
+oi,31,2026-03-01T16:00:00+00:00,2026-03-31T16:00:00+00:00,86400.0,86400,1D
+funding,93,2026-03-01T00:00:00+00:00,2026-03-31T16:00:00+00:00,28800.0,28800,8h

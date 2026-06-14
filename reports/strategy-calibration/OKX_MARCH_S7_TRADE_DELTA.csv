@@ -1,0 +1,4 @@
+date,direction,zone_id,enhanced_result,pnl_after_cost,setup_type,true_fuel_score,p_reach,expected_trade_ev,reason_removed,removal_correct
+2026-03-12,SHORT,BTC-USDT-SWAP-SHORT-1773273641000-1,TIMEOUT,-0.6895,absorption_reversal_short,1.1179,0.58,0.39,EV 0.39 <= 0.4 (p_reach 0.58),YES
+2026-03-18,SHORT,BTC-USDT-SWAP-SHORT-1773792030000-1,WIN,1.86,absorption_reversal_short,1.2248,0.58,0.39,EV 0.39 <= 0.4 (p_reach 0.58),NO
+2026-03-21,LONG,BTC-USDT-SWAP-LONG-1774061201000-7,LOSS,-1.64,absorption_reversal_long,0.3788,0.58,0.39,EV 0.39 <= 0.4 (p_reach 0.58),YES

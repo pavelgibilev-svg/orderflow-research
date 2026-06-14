@@ -1,0 +1,10 @@
+rule,rejected,noise_removed,good_lost,mid_removed,wrongdir_removed,stop_removed,kept_n,kept_winrate,kept_pf,kept_expectancy,live_valid
+R1_LONG_bear_no_reclaim,97,53,30,14,53,51,946,37.21,0.867,-0.1137,YES
+R2_SHORT_bull_no_rejection,96,59,32,5,53,55,947,36.96,0.875,-0.1061,YES
+R3_ofi_conflict,77,50,21,6,49,48,966,37.37,0.885,-0.0969,YES
+R4_taker_conflict,371,205,130,36,189,184,672,37.5,0.866,-0.1155,YES
+R5_no_reclaim,541,284,199,58,271,264,502,36.45,0.799,-0.1799,YES
+R6_high_entropy_no_initiative,0,0,0,0,0,0,1043,36.63,0.854,-0.1255,YES
+R7_low_uniqueness,378,214,131,33,212,203,665,37.74,0.904,-0.0804,YES
+R8_opposite_zone_conflict,610,322,242,46,305,307,433,32.33,0.746,-0.2248,YES
+R9_late_after_impulse,90,36,40,14,38,35,953,35.89,0.817,-0.1613,YES

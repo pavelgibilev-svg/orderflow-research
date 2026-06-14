@@ -28,6 +28,84 @@ This is **not** a trading bot. It is an autonomous CLI research module that:
 There is **no web UI**, **no live recorder**, and **no exchange API** —
 those are explicitly out of scope per the spec.
 
+---
+
+## AdShort — orderflow / liquidity strategy research
+
+**AdShort** is the umbrella research project this repo backs: a study of whether
+order-flow + liquidity structure can identify zones with positive expectancy on a
+**clean 2–3 % move**. It is *research*, **not a production trading system**. Nothing
+here is live, and no trading is performed.
+
+### Target architecture (capital-state router)
+
+```
+Market background        →  Capital state / zone features  →  Zone expectancy   →  Entry / execution
+(trend / range / vol)       (accumulation, distribution,       (does this zone      (timing inside a
+                             absorption, markdown, chop)        beat a coin flip?)    permitted zone)
+```
+
+Zones already exist and are detected (the TypeScript engine above + the Python
+research layer). The open question being researched is **zone expectancy**: given a
+detected zone in a given market background and capital state, does it actually have
+edge on a clean 2–3 % move — and only then, what entry/execution times it.
+
+### Python research layer
+
+The deeper statistical research lives in `scripts/research/` (causal, no-lookahead,
+frozen gates) and writes artifacts to `reports/<branch>/`. Run e.g.:
+
+```bash
+python scripts/research/td_v9_phase.py        # phase-separation audit
+python scripts/research/td_v10_blocker.py     # absorption/accumulation blocker
+python scripts/research/td_v11_absorption.py  # forward-validated absorption labels (trades-only)
+python scripts/research/td_v11b_build_l2.py   # reconstruct per-minute L2 book features (needs local data/)
+python scripts/research/td_v11b_l2.py         # L2-aware absorption validation
+```
+
+These read **local** per-minute caches / raw market data under `data/` and
+`reports/**/_series|_l2cache` (all gitignored — see below). They do not download data.
+
+### Research branches (chronological)
+
+| Branch | Question | Honest outcome |
+|---|---|---|
+| v6 / v7 | strict short-permission gate (GATE_6A / GATE_6E) | gate adds edge as a *regime filter*, not entry alpha; frozen |
+| v8 | 8A "failed VWAP reclaim" short entry | weak candidate; profit concentrated in TREND_DOWN; NEED_MORE_DATA |
+| v9 | phase-separation audit (6 market phases) | phases distinguishable, but GATE_6A leaks into absorption/accumulation; NEED_MORE_DATA |
+| v10 | absorption/accumulation blocker on top of the gate | accumulation partly blocked; absorption not solved; ex-post test failed; NEED_MORE_DATA |
+| v11 | forward-validated absorption labels (trades-only evidence) | **TRADES_ONLY_FEATURES_REJECTED** — within-background AUC ≈ 0.50 (Simpson's-paradox guard) |
+| v11b | L2-aware absorption validation (reconstructed order book) | **L2_ABSORPTION_EVIDENCE_REJECTED** at 1-min resolution — within-TREND_DOWN/RANGE AUC still ≈ 0.49–0.52 |
+
+### Current honest status
+
+- **Trades-only absorption: rejected.** Causal trades-only evidence does not separate
+  "sell pressure that continues markdown" from "sell pressure that gets absorbed"
+  *within* a market background (the cross-background signal is just trend, which the
+  gate already encodes).
+- **1-minute L2 absorption separation: not proven.** Full order-book reconstruction
+  (depth / refill / microprice) did **not** beat the chance floor within
+  TREND_DOWN / RANGE at 1-minute resolution. Open doors: sub-minute / per-event L2,
+  liquidations, OI.
+- **Next core step: zone-level L2 expectancy calibration** — move from minute-level
+  absorption to zone-level expectancy on the clean 2–3 % move.
+- **No production.** Nothing is deployed or traded unless explicitly approved.
+
+### Data policy (important)
+
+Raw market data is **NOT** stored in GitHub. All venue data (OKX / Binance / Bybit
+trades, `incremental_book_L2`, order book tar/zip, reconstructed caches, March/May
+windows) lives locally under `data/` and `reports/**/_series|_l2cache` and is
+gitignored. To reproduce the research you must supply that data locally. See
+[`DATA_MANIFEST_EXCLUDED.md`](DATA_MANIFEST_EXCLUDED.md) for exactly what is excluded,
+where it lives locally, and which scripts read it.
+
+What **is** in GitHub: all source code, research scripts, configs, docs, and the small
+research artifacts (`reports/**/*.md` and small `reports/**/*.csv` scorecards / audits /
+final decisions).
+
+---
+
 ## Project layout
 
 ```

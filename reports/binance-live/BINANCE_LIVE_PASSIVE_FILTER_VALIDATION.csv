@@ -1,0 +1,5 @@
+date,baseline_triggered,baseline_reached,baseline_primary,baseline_duplicate,baseline_failed,filtered_triggered,filtered_reached,filtered_primary
+2026-05-17,12,0,0,0,12,3,0,0
+2026-05-18,13,0,0,0,13,6,0,0
+2026-05-19,10,0,0,0,10,4,0,0
+2026-05-20,6,0,0,0,6,1,0,0

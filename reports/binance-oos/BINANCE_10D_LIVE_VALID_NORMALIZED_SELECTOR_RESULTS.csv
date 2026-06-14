@@ -1,0 +1,7 @@
+model,trades,wins,losses,timeouts,winrate_pct,expectancy_after_cost_pct,pf_after_cost,max_consecutive_losses,wrong_direction,alerts_per_day,no_trade_days,fake_accumulation,good_skipped,long_n,short_n
+Model0_top1_day_RS1,10,1,5,4,10.0,-0.5821,0.35,4,6,1.0,0,3,30,6,4
+Model1_norm_score_floor,2,0,1,1,0.0,-0.6886,0.16,1,1,0.2,8,0,31,2,0
+Model2_+dir_guard,2,0,1,1,0.0,-0.6886,0.16,1,1,0.2,8,0,31,2,0
+Model3_+noise,0,0,0,0,0.0,,,0,0,0.0,10,0,31,0,0
+Model4_max2_cooldown_permissive,1,0,1,0,0.0,-1.64,0.0,1,1,0.1,9,0,31,1,0
+Model5_+no_trade_floor,0,0,0,0,0.0,,,0,0,0.0,10,0,31,0,0

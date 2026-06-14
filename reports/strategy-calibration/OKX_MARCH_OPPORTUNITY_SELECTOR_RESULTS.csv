@@ -1,0 +1,7 @@
+model,trades,wins,losses,timeouts,winrate,expectancy,pf,max_consec_losses,wrong_direction,alerts_per_day,no_trade_days,fake_accumulation,good_captured,good_total,skipped_good
+ModelA_guard_only,29,16,8,5,55.17,0.5767,2.172,2,8,1.0,0,0,16,382,366
+ModelB_guard_conf2,29,16,8,5,55.17,0.5767,2.172,2,8,1.0,0,0,16,382,366
+ModelC_guard_conf3,29,15,9,5,51.72,0.456,1.831,2,8,1.0,0,0,15,382,367
+ModelD_guard_oppscore_OKXfloor,24,11,9,4,45.83,0.2474,1.384,2,10,0.83,5,0,11,382,371
+ModelE_max2_cooldown_oppscore,57,21,27,9,36.84,-0.0884,0.891,5,28,1.97,0,0,21,382,361
+ModelF_first_elig_oppscore_notrade,24,11,9,4,45.83,0.2474,1.384,2,10,0.83,5,0,11,382,371

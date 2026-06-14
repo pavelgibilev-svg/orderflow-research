@@ -1,0 +1,8 @@
+feature,rule,win_med,loss_med,source,causal,overfit_risk,mandatory
+prior_move_60m_pct,< 0,-0.4284,-0.4219,STRONG-vs-WEAK d=-1.74,60m return up to confirmedTs,LOW (sign-based),YES
+eng_ofi,<= 0.2 (no buy flow),-0.0612,-0.1056,stop analysis: buyer_absorption,engine OFI at detection,LOW (structural),YES
+supportive_taker_imb_15m,>= -0.1 (not buy-dominant),-0.0541,0.0288,buyer absorption reject,taker flow 15m pre-confirm,LOW,YES
+reclaim_zoneMid_preconfirm,== 1 (rejection proof),1.0,0.0,M1 57% wr,price rejected from zoneMid pre-confirm,LOW (boolean),OPTIONAL (confluence)
+ms_thin_path_score+walls,void>=0.5 AND no large walls,0.0958,0.0946,M4 PF 3.63 (n=11),book snapshot at confirm,MED (n small),OPTIONAL
+microprice_aligned_5m_bps,>= 0 (not against short),1.101,1.1755,M3 PF 2.13,microprice delta pre-confirm,LOW,OPTIONAL
+cluster_cooldown,same dir + price band 0.5% within 120m -> suppress,,,dedup,prior accepted picks only,LOW,YES (selection)

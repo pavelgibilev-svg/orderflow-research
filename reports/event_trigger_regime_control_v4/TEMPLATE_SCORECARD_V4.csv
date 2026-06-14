@@ -1,0 +1,9 @@
+template_id,trigger_family,status,regimes_with_positive_lift,down_lift,up_lift,range_lift,note
+TD_ACTIVE_MARKDOWN_EVENT_SHORT_TEMPLATE,ACTIVE_MARKDOWN_EVENT,REJECT,0,-2.3,5.0,4.5,di-free; OKX single-venue
+TD_FORCED_UNWIND_EVENT_SHORT_TEMPLATE,FORCED_UNWIND_EVENT,REJECT,0,16.1,-0.5,9.9,di-free; OKX single-venue
+TD_CVD_BREAKDOWN_EVENT_SHORT_TEMPLATE,CVD_BREAKDOWN_EVENT,REJECT,1,-0.4,-1.2,1.9,di-free; OKX single-venue
+TD_SELL_PRESSURE_NO_ABSORPTION_SHORT_TEMPLATE,SELL_PRESSURE_NO_ABSORPTION_EVENT,REJECT,1,3.9,0.5,5.7,di-free; OKX single-venue
+TD_TRUE_DISAGREEMENT_VETO,cross_venue,NEED_MORE_DATA,,,,,cross-venue/L2 not testable in OKX-only control regimes -> needs Bybit+OKX+L2 control data (see DOWNLOAD_REQUIREMENTS)
+TD_ABSORPTION_DIVERGENCE_NO_SHORT,absorption(L2),NEED_MORE_DATA,,,,,cross-venue/L2 not testable in OKX-only control regimes -> needs Bybit+OKX+L2 control data (see DOWNLOAD_REQUIREMENTS)
+TD_VENUE_NOISE_IGNORE,cross_venue,NEED_MORE_DATA,,,,,cross-venue/L2 not testable in OKX-only control regimes -> needs Bybit+OKX+L2 control data (see DOWNLOAD_REQUIREMENTS)
+TD_LEAD_LAG_MARKDOWN_SHORT_TEMPLATE,cross_venue,NEED_MORE_DATA,,,,,cross-venue/L2 not testable in OKX-only control regimes -> needs Bybit+OKX+L2 control data (see DOWNLOAD_REQUIREMENTS)

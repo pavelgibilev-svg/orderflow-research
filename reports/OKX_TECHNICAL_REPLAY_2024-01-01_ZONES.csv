@@ -1,0 +1,11 @@
+zone_id,direction,state,createdTs,confirmedTs,triggerTs,resolvedTs,priceLow,priceHigh,triggerPrice,reachedTs,mfePct,maePct,timeToTargetMs,reachedHorizon,suppressionReason,uniqueMoveId,isPrimaryMoveZone,duplicateMoveCredit
+,LONG,,,1704067851000,1704067897000,1704137370507,,,42477.25,,,,,,,1,true,false
+,LONG,,,1704072661000,1704072885000,1704137666205,,,42595.850000000006,,,,,,,1,false,true
+,LONG,,,1704068777000,1704072910000,1704138412711,,,42609.850000000006,,,,,,,1,false,true
+,SHORT,,,1704070162000,,1704073007000,,,,,,,,,,,,
+,SHORT,,,1704069844000,,1704073040000,,,,,,,,,,,,
+,LONG,,,1704075551000,1704076502000,1704138447165,,,42627.149999999994,,,,,,,1,false,true
+,SHORT,,,1704076021000,1704077418000,1704163818000,,,42521.75,,,,,,,,,
+,SHORT,,,1704073560000,,,,,,,,,,,,,,
+,SHORT,,,1704073913000,,,,,,,,,,,,,,
+,LONG,,,1704076636000,,,,,,,,,,,,,,

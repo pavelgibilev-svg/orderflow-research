@@ -1,0 +1,9 @@
+# EVENT CASEBOOK (unique short events by family)
+
+Build 2026-06-12T14:32:51+00:00 · research/calibration.
+
+## ACTIVE_MARKDOWN_EVENT (n_short=589, PF 1.848, windows ['W1_NOVEMBER', 'W3_JANUARY', 'W4_APRIL'])
+## FORCED_UNWIND_EVENT (n_short=93, PF 1.355, windows ['W1_NOVEMBER', 'W3_JANUARY', 'W4_APRIL'])
+## CVD_BREAKDOWN_EVENT (n_short=454, PF 2.081, windows ['W1_NOVEMBER', 'W3_JANUARY', 'W4_APRIL'])
+## SELL_PRESSURE_NO_ABSORPTION_EVENT (n_short=808, PF 2.189, windows ['W1_NOVEMBER', 'W3_JANUARY', 'W4_APRIL'])
+## ABSORPTION_AFTER_SELL_PRESSURE_EVENT (n_short=0, PF None, windows ['W1_NOVEMBER', 'W3_JANUARY', 'W4_APRIL'])

@@ -1,0 +1,5 @@
+date,direction,zone_id,confirmed_iso,entry_price,exit_reason,outcome,pnl_after_cost,mfe_pct,mae_pct,dist_to_recent_swing_high_pct,dl2_supp_minus_opp_net_flow_15m,ms_thin_path_score,ms_large_walls_on_path,dl2_microprice_aligned_delta_5m_bps,funding_rate_at_signal,_score,_p_reach,_ev
+2026-05-21,SHORT,BTCUSDT-SHORT-1779326244000-6,2026-05-21T01:27:46+00:00,77834.0,timeout,TIMEOUT,0.371,1.461187,0.444536,0.406,-414.439,0.1066,1,6.54,2.376e-05,1.3352,0.63,0.565
+2026-05-22,SHORT,BTCUSDT-SHORT-1779416443000-4,2026-05-22T02:23:43+00:00,77630.5,target_2pct,WIN,1.86,2.019052,0.299109,0.0868,-37.543,0.1044,6,,4.135e-05,0.7197,0.6,0.46
+2026-05-24,SHORT,BTCUSDT-SHORT-1779580831000-1,2026-05-24T00:11:31+00:00,76649.1,timeout,TIMEOUT,-0.76,0.773786,1.240589,0.1648,-3020.726,0.1034,6,-0.0,9.055e-05,0.3741,0.6,0.46
+2026-05-25,SHORT,BTCUSDT-SHORT-1779667293000-1,2026-05-25T00:04:33+00:00,77137.2,timeout,TIMEOUT,-0.2715,0.344581,0.973201,0.0372,2145.759,0.109,5,,6.473e-05,0.7611,0.6,0.46

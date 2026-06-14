@@ -1,0 +1,6 @@
+gate,allowed_n,event_gate_pf,event_gate_exp,randomgate_pf,randomall_pf,up_blocked_pct,range_blocked_pct,down_retained_pct,gate_helps_vs_randall,event_adds_vs_randgate,status
+GATE_1_STRICT_DOWNTREND,6084,1.309,0.126,1.573,1.416,60.5,57.8,50.4,True,False,NEED_MORE_DATA
+GATE_2_SELLER_CONTROL,7921,1.274,0.108,1.458,1.416,45.0,42.6,64.6,False,False,REJECT
+GATE_3_NO_UPTREND,7750,1.354,0.131,1.667,1.416,48.4,43.0,63.4,True,False,REJECT
+GATE_4_NO_CHOP,12138,1.307,0.113,1.447,1.416,4.2,3.0,94.0,False,False,REJECT
+GATE_5_COMBINED,5752,1.349,0.139,1.638,1.416,62.4,59.6,47.1,True,False,NEED_MORE_DATA

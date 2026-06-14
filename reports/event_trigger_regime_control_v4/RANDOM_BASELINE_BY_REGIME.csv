@@ -1,0 +1,5 @@
+regime,rand_n,rand_hit2,rand_hit2_rate,rand_W,rand_L,rand_TO,rand_pf,rand_expectancy,rand_median_mfe,rand_median_mae,rand_max_dd_proxy
+TREND_DOWN,2000,694,34.7,694,316,990,2.491,0.386,1.268,0.5995,-11.48
+TREND_UP,500,25,5.0,25,181,294,0.157,-0.501,0.482,0.986,-252.42
+RANGE_CHOP,1000,116,11.6,116,165,719,0.797,-0.055,0.6785,0.5765,-56.7
+REVERSAL_BOUNCE,500,48,9.6,48,35,417,1.555,0.064,0.845,0.303,-7.76

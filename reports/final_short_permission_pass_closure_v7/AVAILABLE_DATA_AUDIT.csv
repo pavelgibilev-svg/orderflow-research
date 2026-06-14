@@ -1,0 +1,7 @@
+source,kind,windows,used_in,note
+reports/short_permission_gate_v5/_series/*.json,"cached per-minute series (OKX, di-free)",8,"v5,v6,v7",8 windows; primary closure input
+reports/trend_down_crossvenue_v2/_normalized/OKX_*_1m.csv.gz,OKX per-minute L2+trades,3,"v2,v4,v5,v6",3 TREND_DOWN windows (Nov/Jan/Apr)
+reports/trend_down_crossvenue_v2/_normalized/Bybit_*_1m.csv.gz,Bybit per-minute L2+trades,3,"v2,v3",cross-venue only on the 3 down windows
+data/okx-historical/BTC-USDT-SWAP/<date>/trades.csv.gz,OKX trades (tardis okex-swap),"2026-03 (30d, no 03-17), 2026-05 (30d), 2024 first-of-month",v4 control windows,"UNUSED ranges exist (see classification); mostly RANGE in May, mixed in March"
+data/trend_down_v2_okx/ (staged) + data/11.06.2026/ (Bybit) + _quarantine_old_okx_replaced/,raw OKX/Bybit archives,3 down windows,v2,raw; old OKX quarantined
+BINANCE,N/A,0,none,NO Binance data in this TREND_DOWN arc — data is Bybit + OKX only (provenance correction)

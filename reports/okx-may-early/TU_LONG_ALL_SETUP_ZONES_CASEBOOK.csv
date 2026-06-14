@@ -1,0 +1,8 @@
+date,zone_id,confirmedTs,entry,passed_models,n_models_passed,MFE,MAE,hit_2,hit_2_5,hit_3,sim_result,why_failed,seller_absorption,failed_reclaim,thick_ask,microprice_against,taker_against
+2026-05-04,BTC-USDT-SWAP-LONG-1777863960000-8,1777865403000,80116.5,"M0_baseline,M1_TU_LONG_only",2,0.963,-2.459,0,0,0,LOSS,seller_absorption;failed_reclaim;thick_ask_path;taker_against,1,1,1,0,1
+2026-05-05,BTC-USDT-SWAP-LONG-1777981492000-20,1777982126000,80891.6,"M0_baseline,M1_TU_LONG_only",2,2.359,-0.294,1,0,0,WIN,seller_absorption;failed_reclaim;thick_ask_path;taker_against,1,1,1,0,1
+2026-05-05,BTC-USDT-SWAP-LONG-1777984771000-21,1777984982000,81241.0,"M0_baseline,M1_TU_LONG_only,M2_no_seller_abs,M3_plus_reclaim,M4_plus_taker_micro,M6_confluence_2of4,M7_live_valid",7,1.919,-0.723,0,0,0,TIMEOUT,thick_ask_path,0,0,1,0,0
+2026-05-05,BTC-USDT-SWAP-LONG-1777986857000-22,1777987254000,81622.5,"M0_baseline,M1_TU_LONG_only,M2_no_seller_abs,M3_plus_reclaim,M4_plus_taker_micro,M6_confluence_2of4,M7_live_valid",7,1.443,-1.187,0,0,0,TIMEOUT,thick_ask_path,0,0,1,0,0
+2026-05-14,BTC-USDT-SWAP-LONG-1778774359000-27,1778774539000,81303.9,"M0_baseline,M1_TU_LONG_only",2,0.857,-3.34,0,0,0,LOSS,seller_absorption;failed_reclaim;thick_ask_path;microprice_against,1,1,1,1,0
+2026-05-14,BTC-USDT-SWAP-LONG-1778774469000-28,1778774649000,81293.8,"M0_baseline,M1_TU_LONG_only,M2_no_seller_abs,M4_plus_taker_micro",4,0.87,-3.328,0,0,0,LOSS,failed_reclaim;thick_ask_path;microprice_against,0,1,1,1,0
+2026-05-14,BTC-USDT-SWAP-LONG-1778774480000-29,1778774660000,81298.9,"M0_baseline,M1_TU_LONG_only,M2_no_seller_abs,M4_plus_taker_micro",4,0.864,-3.334,0,0,0,LOSS,failed_reclaim;thick_ask_path;microprice_against,0,1,1,1,0

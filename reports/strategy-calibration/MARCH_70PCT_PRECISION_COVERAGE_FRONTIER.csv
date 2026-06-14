@@ -1,0 +1,17 @@
+regime,min_count,achieved_n,selector,precision_pct,recall_pct,wrong_rate_pct,h1_precision_pct,h2_precision_pct,overfit_risk,note
+leak_free,5,13,TREE::leaf_1::pct_opposite_move_already_done > 66.04 AND local_realized_vol_180m <= 0.00064,69.23,,,,,HIGH,
+leak_free,10,13,TREE::leaf_1::pct_opposite_move_already_done > 66.04 AND local_realized_vol_180m <= 0.00064,69.23,,,,,HIGH,
+leak_free,15,29,P::score_trigger_ge_1.0+pct_correct_move_already_done_le_0.0::top1,48.28,11.38,0.0,50.0,46.67,MEDIUM,
+leak_free,20,29,P::score_trigger_ge_1.0+pct_correct_move_already_done_le_0.0::top1,48.28,11.38,0.0,50.0,46.67,MEDIUM,
+leak_free,25,29,P::score_trigger_ge_1.0+pct_correct_move_already_done_le_0.0::top1,48.28,11.38,0.0,50.0,46.67,MEDIUM,
+leak_free,29,29,P::score_trigger_ge_1.0+pct_correct_move_already_done_le_0.0::top1,48.28,11.38,0.0,50.0,46.67,MEDIUM,
+leak_free,40,58,S::dist_to_recent_swing_high_pct_le_0.4616::top2,36.21,17.07,6.9,39.29,33.33,LOW,
+leak_free,60,60,T::score_trigger_le_0.9737+pct_correct_move_already_done_le_0.0+is_asia_session_TRUE,28.33,13.82,13.33,39.29,18.75,LOW,
+oracle_leak,5,5,,80.0,,,,,,uses matched_move_size_pct (LEAK)
+oracle_leak,10,10,,40.0,,,,,,uses matched_move_size_pct (LEAK)
+oracle_leak,15,15,,26.67,,,,,,uses matched_move_size_pct (LEAK)
+oracle_leak,20,20,,20.0,,,,,,uses matched_move_size_pct (LEAK)
+oracle_leak,25,25,,16.0,,,,,,uses matched_move_size_pct (LEAK)
+oracle_leak,29,29,,13.79,,,,,,uses matched_move_size_pct (LEAK)
+oracle_leak,40,40,,10.0,,,,,,uses matched_move_size_pct (LEAK)
+oracle_leak,60,60,,10.0,,,,,,uses matched_move_size_pct (LEAK)

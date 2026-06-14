@@ -1,0 +1,10 @@
+# ENTRY POLICY COMPARISON (no fitting)
+
+Build 2026-06-12T14:32:51+00:00 · research/calibration.
+
+| policy | n | hit2% | PF | exp% | medT2 | windows |
+|---|--:|--:|--:|--:|--:|---|
+| EVENT_CLOSE | 1944 | 41.0 | 1.991 | 0.38 | 186 | W1_NOVEMBER,W3_JANUARY,W4_APRIL |
+| EVENT_NEXT_MINUTE | 1944 | 41.4 | 2.004 | 0.385 | 185.0 | W1_NOVEMBER,W3_JANUARY,W4_APRIL |
+| EVENT_PULLBACK_SMALL | 804 | 41.5 | 2.07 | 0.399 | 202.5 | W1_NOVEMBER,W3_JANUARY,W4_APRIL |
+| NO_ENTRY_ABSORPTION | 808 | 41.1 | 2.189 | 0.415 | 185.0 | W1_NOVEMBER,W3_JANUARY,W4_APRIL |

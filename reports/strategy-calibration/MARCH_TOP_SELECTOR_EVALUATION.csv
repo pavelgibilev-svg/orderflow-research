@@ -1,0 +1,10 @@
+category,selector,selected_n,alerts_per_day,good_n,bad_n,wrong_n,missed_n,noisy_n,precision_pct,recall_pct,wrong_rate_pct,long_n,short_n,long_precision_pct,short_precision_pct,h1_n,h2_n,h1_precision_pct,h2_precision_pct,avg_lead_min,median_lead_min,max_consecutive_bad
+best_precision_min20,single::session_asia::top1_score,29,1.0,12,14,1,13,1,41.38,9.76,3.45,15,14,46.67,35.71,14,15,42.86,40.0,102.55,84.0,5
+best_precision_min10,single::session_asia::top1_score,29,1.0,12,14,1,13,1,41.38,9.76,3.45,15,14,46.67,35.71,14,15,42.86,40.0,102.55,84.0,5
+best_1_2_alerts_day,single::session_asia::top1_score,29,1.0,12,14,1,13,1,41.38,9.76,3.45,15,14,46.67,35.71,14,15,42.86,40.0,102.55,84.0,5
+best_recall_min15pct,single::not_late::nocap,925,31.897,121,665,126,539,49,13.08,98.37,13.62,455,470,13.85,12.34,433,492,15.01,11.38,95.58,85.95,149
+best_balanced_f1_min20,single::session_asia::nocap,443,15.276,81,281,70,202,24,18.28,65.85,15.8,211,232,19.43,17.24,218,225,15.6,20.89,102.03,88.78,56
+best_LONG_min10,dir::LONG+filter_kept+opp_eq0::top1_score,25,0.862,7,14,1,12,1,28.0,5.69,4.0,25,0,28.0,,11,14,45.45,14.29,106.95,117.75,7
+best_SHORT_min10,dir::SHORT+filter_kept+not_late::top1_score,27,0.931,6,16,1,15,1,22.22,4.88,3.7,0,27,,22.22,13,14,23.08,21.43,102.81,75.92,11
+best_explainable,single::session_asia::top1_score,29,1.0,12,14,1,13,1,41.38,9.76,3.45,15,14,46.67,35.71,14,15,42.86,40.0,102.55,84.0,5
+best_train_test_stable_min20,single::session_asia::top1_score,29,1.0,12,14,1,13,1,41.38,9.76,3.45,15,14,46.67,35.71,14,15,42.86,40.0,102.55,84.0,5

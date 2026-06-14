@@ -1,0 +1,17 @@
+metric,value
+zones_total,25
+zones_triggered,11
+zones_reached,4
+hit_rate_among_triggered,0.36363636363636365
+deduplication_enabled,1
+cooldown_minutes_after_resolve,30
+duplicate_suppression_count,6907
+suppressions_active_open,4321
+suppressions_active_triggered,2582
+suppressions_cooldown,4
+status_RESOLVED_REACHED,4
+direction_SHORT,9
+status_RESOLVED_FAILED,7
+direction_LONG,16
+status_INVALIDATED,13
+status_NO_TRIGGER,1

@@ -1,0 +1,5 @@
+gate,rule,unique_alerts,winrate,pf,expectancy,hit2_5,hit3,strong_caught,tag
+min4,P6_strict_5of7,24,29.17,1.227,0.1163,3,2,3,WEAK
+min5,P6_strict_5of7,24,29.17,1.227,0.1163,3,2,3,WEAK
+min6,P6_strict_5of7,24,29.17,1.227,0.1163,3,2,3,WEAK
+min8,P6_strict_5of7,24,29.17,1.227,0.1163,3,2,3,WEAK

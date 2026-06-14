@@ -1,0 +1,52 @@
+# TD-short shadow observer — daily summary
+
+| venue | date | zones | candidates | accepted | top rejects |
+|---|---|--:|--:|--:|---|
+| BINANCE_MAY | 2026-05-21 | 24 | 0 | 0 | {'not_TREND_DOWN': 24, 'not_SHORT': 12, 'buyer_absorption': 12} |
+| BINANCE_MAY | 2026-05-22 | 23 | 1 | 1 | {'not_TREND_DOWN': 22, 'buyer_absorption': 13, 'not_SHORT': 9} |
+| BINANCE_MAY | 2026-05-23 | 19 | 0 | 0 | {'not_SHORT': 16, 'not_TREND_DOWN': 10, 'prior_60m_not_negative': 8} |
+| BINANCE_MAY | 2026-05-24 | 7 | 0 | 0 | {'not_TREND_DOWN': 7, 'buyer_absorption': 7, 'prior_60m_not_negative': 5} |
+| BINANCE_MAY | 2026-05-25 | 7 | 0 | 0 | {'not_TREND_DOWN': 7, 'buyer_absorption': 7, 'prior_60m_not_negative': 6} |
+| BINANCE_MAY | 2026-05-26 | 22 | 0 | 0 | {'not_TREND_DOWN': 22, 'buyer_absorption': 17, 'not_SHORT': 14} |
+| BINANCE_MAY | 2026-05-27 | 15 | 0 | 0 | {'not_SHORT': 15, 'not_TREND_DOWN': 14, 'buyer_absorption': 10} |
+| BINANCE_MAY | 2026-05-28 | 14 | 0 | 0 | {'not_SHORT': 14, 'buyer_absorption': 8, 'prior_60m_not_negative': 5} |
+| BINANCE_MAY | 2026-05-29 | 15 | 0 | 0 | {'not_TREND_DOWN': 15, 'not_SHORT': 15, 'prior_60m_not_negative': 6} |
+| BINANCE_MAY | 2026-05-30 | 7 | 0 | 0 | {'not_TREND_DOWN': 7, 'not_SHORT': 7, 'prior_60m_not_negative': 4} |
+| OKX_MARCH | 2026-03-02 | 37 | 0 | 0 | {'not_TREND_DOWN': 37, 'prior_60m_not_negative': 21, 'not_SHORT': 16} |
+| OKX_MARCH | 2026-03-03 | 45 | 0 | 0 | {'not_TREND_DOWN': 44, 'buyer_absorption': 22, 'not_SHORT': 22} |
+| OKX_MARCH | 2026-03-04 | 53 | 0 | 0 | {'not_TREND_DOWN': 53, 'prior_60m_not_negative': 34, 'not_SHORT': 29} |
+| OKX_MARCH | 2026-03-05 | 29 | 3 | 2 | {'not_TREND_DOWN': 25, 'not_SHORT': 18, 'buyer_absorption': 12} |
+| OKX_MARCH | 2026-03-06 | 43 | 8 | 2 | {'not_SHORT': 24, 'buyer_absorption': 22, 'prior_60m_not_negative': 13} |
+| OKX_MARCH | 2026-03-07 | 27 | 3 | 2 | {'not_SHORT': 14, 'buyer_absorption': 13, 'prior_60m_not_negative': 11} |
+| OKX_MARCH | 2026-03-08 | 33 | 0 | 0 | {'not_TREND_DOWN': 33, 'prior_60m_not_negative': 16, 'buyer_absorption': 15} |
+| OKX_MARCH | 2026-03-09 | 47 | 0 | 0 | {'not_TREND_DOWN': 47, 'prior_60m_not_negative': 27, 'not_SHORT': 22} |
+| OKX_MARCH | 2026-03-10 | 46 | 0 | 0 | {'not_TREND_DOWN': 46, 'prior_60m_not_negative': 29, 'buyer_absorption': 26} |
+| OKX_MARCH | 2026-03-11 | 30 | 0 | 0 | {'not_TREND_DOWN': 30, 'buyer_absorption': 16, 'not_SHORT': 13} |
+| OKX_MARCH | 2026-03-12 | 32 | 0 | 0 | {'not_TREND_DOWN': 32, 'buyer_absorption': 15, 'not_SHORT': 15} |
+| OKX_MARCH | 2026-03-13 | 32 | 0 | 0 | {'not_TREND_DOWN': 32, 'prior_60m_not_negative': 22, 'buyer_absorption': 16} |
+| OKX_MARCH | 2026-03-14 | 16 | 0 | 0 | {'not_TREND_DOWN': 15, 'buyer_absorption': 13, 'not_SHORT': 8} |
+| OKX_MARCH | 2026-03-15 | 36 | 0 | 0 | {'not_TREND_DOWN': 36, 'prior_60m_not_negative': 25, 'buyer_absorption': 21} |
+| OKX_MARCH | 2026-03-16 | 44 | 0 | 0 | {'not_TREND_DOWN': 44, 'prior_60m_not_negative': 26, 'not_SHORT': 24} |
+| OKX_MARCH | 2026-03-18 | 57 | 11 | 2 | {'not_TREND_DOWN': 31, 'buyer_absorption': 27, 'not_SHORT': 21} |
+| OKX_MARCH | 2026-03-19 | 49 | 5 | 2 | {'prior_60m_not_negative': 26, 'not_SHORT': 25, 'buyer_absorption': 25} |
+| OKX_MARCH | 2026-03-20 | 34 | 0 | 0 | {'not_TREND_DOWN': 34, 'prior_60m_not_negative': 21, 'buyer_absorption': 14} |
+| OKX_MARCH | 2026-03-21 | 21 | 0 | 0 | {'not_TREND_DOWN': 21, 'prior_60m_not_negative': 10, 'not_SHORT': 9} |
+| OKX_MARCH | 2026-03-22 | 32 | 9 | 2 | {'not_SHORT': 13, 'buyer_absorption': 12, 'not_TREND_DOWN': 11} |
+| OKX_MARCH | 2026-03-23 | 37 | 0 | 0 | {'not_TREND_DOWN': 37, 'prior_60m_not_negative': 22, 'not_SHORT': 19} |
+| OKX_MARCH | 2026-03-24 | 36 | 1 | 1 | {'not_TREND_DOWN': 35, 'not_SHORT': 16, 'buyer_absorption': 16} |
+| OKX_MARCH | 2026-03-25 | 32 | 0 | 0 | {'not_TREND_DOWN': 32, 'prior_60m_not_negative': 22, 'not_SHORT': 18} |
+| OKX_MARCH | 2026-03-26 | 49 | 7 | 2 | {'not_TREND_DOWN': 28, 'not_SHORT': 23, 'buyer_absorption': 23} |
+| OKX_MARCH | 2026-03-27 | 33 | 4 | 2 | {'not_SHORT': 20, 'buyer_absorption': 17, 'prior_60m_not_negative': 14} |
+| OKX_MARCH | 2026-03-28 | 23 | 1 | 1 | {'not_SHORT': 15, 'buyer_absorption': 15, 'prior_60m_not_negative': 11} |
+| OKX_MARCH | 2026-03-29 | 24 | 0 | 0 | {'not_TREND_DOWN': 24, 'buyer_absorption': 15, 'prior_60m_not_negative': 12} |
+| OKX_MARCH | 2026-03-30 | 38 | 0 | 0 | {'not_TREND_DOWN': 38, 'prior_60m_not_negative': 24, 'not_SHORT': 22} |
+| OKX_MARCH | 2026-03-31 | 28 | 0 | 0 | {'not_TREND_DOWN': 28, 'buyer_absorption': 15, 'prior_60m_not_negative': 14} |
+| OKX_MAY | 2026-05-22 | 21 | 0 | 0 | {'not_TREND_DOWN': 21, 'not_SHORT': 8, 'prior_60m_not_negative': 7} |
+| OKX_MAY | 2026-05-23 | 18 | 2 | 2 | {'not_SHORT': 12, 'buyer_absorption': 10, 'prior_60m_not_negative': 10} |
+| OKX_MAY | 2026-05-24 | 25 | 0 | 0 | {'not_TREND_DOWN': 25, 'prior_60m_not_negative': 13, 'not_SHORT': 12} |
+| OKX_MAY | 2026-05-25 | 14 | 0 | 0 | {'not_TREND_DOWN': 14, 'prior_60m_not_negative': 11, 'buyer_absorption': 10} |
+| OKX_MAY | 2026-05-26 | 17 | 0 | 0 | {'not_TREND_DOWN': 17, 'prior_60m_not_negative': 7, 'not_SHORT': 6} |
+| OKX_MAY | 2026-05-27 | 23 | 2 | 1 | {'not_TREND_DOWN': 18, 'buyer_absorption': 11, 'not_SHORT': 9} |
+| OKX_MAY | 2026-05-28 | 27 | 4 | 2 | {'not_SHORT': 11, 'buyer_absorption': 11, 'not_TREND_DOWN': 9} |
+| OKX_MAY | 2026-05-29 | 23 | 0 | 0 | {'not_TREND_DOWN': 23, 'buyer_absorption': 13, 'not_SHORT': 12} |
+| OKX_MAY | 2026-05-30 | 19 | 0 | 0 | {'not_TREND_DOWN': 19, 'prior_60m_not_negative': 14, 'not_SHORT': 10} |

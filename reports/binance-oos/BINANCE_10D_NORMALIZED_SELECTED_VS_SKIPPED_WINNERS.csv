@@ -1,0 +1,7 @@
+metric,value
+binance_winners_total,31
+old_rs1_caught_winners,1
+normalized_M3_caught_winners,0
+winners_eligible_after_norm_filter,10
+still_skipped,31
+fake_long_rejected_by_guard,40

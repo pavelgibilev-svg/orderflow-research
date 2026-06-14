@@ -1,0 +1,3 @@
+model,trades,wins,losses,timeouts,winrate_pct,avg_win_after_cost,avg_loss_after_cost,avg_timeout_pnl_after_cost,expectancy_pre_cost_pct,expectancy_after_cost_pct,total_return_after_cost_pct,pf_after_cost,max_consecutive_losses,long_winrate,short_winrate,h1_winrate,h2_winrate
+enhanced_baseline_exact,29,18,8,3,62.07,1.86,-1.64,-0.5276,0.7875,0.6475,18.7771,2.258,3,55.56,72.73,71.43,53.33
+s7_exact,26,17,7,2,65.38,1.86,-1.64,-0.4467,0.8803,0.7403,19.2466,2.527,3,58.82,77.78,76.92,53.85

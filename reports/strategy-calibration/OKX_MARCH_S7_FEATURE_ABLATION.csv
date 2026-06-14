@@ -1,0 +1,13 @@
+variant,enabled,trades,wins,losses,timeouts,winrate_pct,expectancy_after_cost_pct,pf_after_cost,removed_vs_enh,wins_lost,losses_removed,timeouts_removed,h1_winrate,h2_winrate,long_winrate,short_winrate
+S7_full,"fuel,void,wall,micro,funding",26,17,7,2,65.38,0.7403,2.527,3,1,1,1,76.92,53.85,58.82,77.78
+without_fuel,"void,wall,micro,funding",21,15,4,2,71.43,0.9736,3.662,8,3,4,1,83.33,55.56,61.54,87.5
+without_void,"fuel,wall,micro,funding",24,16,7,1,66.67,0.7711,2.612,5,2,1,2,76.92,54.55,60.0,77.78
+without_wall,"fuel,void,micro,funding",26,17,7,2,65.38,0.7403,2.527,3,1,1,1,76.92,53.85,58.82,77.78
+without_micro,"fuel,void,wall,funding",14,11,3,0,78.57,1.11,4.159,15,7,5,3,88.89,60.0,75.0,83.33
+without_funding,"fuel,void,wall,micro",21,14,6,1,66.67,0.7181,2.376,8,4,2,2,80.0,54.55,64.29,71.43
+only_fuel,fuel,0,0,0,0,0.0,,,29,18,8,3,0.0,0.0,0.0,0.0
+only_void,void,0,0,0,0,0.0,,,29,18,8,3,0.0,0.0,0.0,0.0
+only_wall,wall,0,0,0,0,0.0,,,29,18,8,3,0.0,0.0,0.0,0.0
+only_micro,micro,0,0,0,0,0.0,,,29,18,8,3,0.0,0.0,0.0,0.0
+only_funding,funding,0,0,0,0,0.0,,,29,18,8,3,0.0,0.0,0.0,0.0
+enhanced_no_overlay,(none),0,0,0,0,0.0,,,29,18,8,3,0.0,0.0,0.0,0.0

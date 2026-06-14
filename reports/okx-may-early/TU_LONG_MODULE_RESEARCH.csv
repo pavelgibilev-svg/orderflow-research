@@ -1,0 +1,9 @@
+model,trades,wins,losses,timeouts,winrate_pct,expectancy_after_cost_pct,pf_after_cost,total_return_after_cost_pct,max_consecutive_losses,no_trade_days,alerts_per_day,hit_2,hit_2_5,hit_3,correctly_rejected_losers,rejected_winners
+M0_baseline_RS1,3,1,2,0,33.33,-0.4733,0.567,-1.42,1,0,1.0,1,0,0,0,0
+M1_TU_LONG_only,3,1,2,0,33.33,-0.4733,0.567,-1.42,1,0,1.0,1,0,0,0,0
+M2_no_seller_absorption,2,0,1,1,0.0,-0.2369,0.711,-0.4738,1,1,0.67,0,0,0,2,1
+M3_plus_reclaim,1,0,0,1,0.0,1.1662,,1.1662,0,2,0.33,0,0,0,4,1
+M4_plus_taker_microprice,2,0,1,1,0.0,-0.2369,0.711,-0.4738,1,1,0.67,0,0,0,2,1
+M5_plus_thin_ask,0,0,0,0,0.0,,,,0,3,0.0,0,0,0,4,1
+M6_confluence_2of4,1,0,0,1,0.0,1.1662,,1.1662,0,2,0.33,0,0,0,4,1
+M7_live_valid_2of4_cooldown,1,0,0,1,0.0,1.1662,,1.1662,0,2,0.33,0,0,0,4,1

@@ -1,0 +1,52 @@
+source_exchange,product_type,symbol,data_type,date,filepath,file_size_mb,detected_schema,status,notes
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2025-11-19,data/11.06.2026/2025-11-19_BTCUSDT_ob200.data.zip,291.15,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2025-11-20,data/11.06.2026/2025-11-20_BTCUSDT_ob200.data.zip,316.97,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2025-11-21,data/11.06.2026/2025-11-21_BTCUSDT_ob200.data.zip,441.21,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2025-11-22,data/11.06.2026/2025-11-22_BTCUSDT_ob200.data.zip,244.41,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-01-28,data/11.06.2026/2026-01-28_BTCUSDT_ob200.data.zip,206.84,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-01-29,data/11.06.2026/2026-01-29_BTCUSDT_ob200.data.zip,218.47,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-01-30,data/11.06.2026/2026-01-30_BTCUSDT_ob200.data.zip,297.11,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-01-31,data/11.06.2026/2026-01-31_BTCUSDT_ob200.data.zip,283.06,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-02-11,data/11.06.2026/2026-02-11_BTCUSDT_ob200.data.zip,337.21,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-02-12,data/11.06.2026/2026-02-12_BTCUSDT_ob200.data.zip,324.19,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-02-13,data/11.06.2026/2026-02-13_BTCUSDT_ob200.data.zip,307.79,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,orderbook_L2_200,2026-02-14,data/11.06.2026/2026-02-14_BTCUSDT_ob200.data.zip,189.41,"Bybit V5 JSONL orderbook.200 (snapshot+delta; ts ms; b/a=[price,size]; size 0=delete)",PRESENT,
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2025-11-22,data/11.06.2026/BTC-USDT-SWAP-L2orderbook-400lv-2025-11-22.tar.gz,558.44,"OKX L2 400lv JSONL (action snapshot/update; ts str ms; asks/bids=[price,size,#orders])",PRESENT,
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-01-31,data/11.06.2026/BTC-USDT-SWAP-L2orderbook-400lv-2026-01-31.tar.gz,686.57,"OKX L2 400lv JSONL (action snapshot/update; ts str ms; asks/bids=[price,size,#orders])",PRESENT,
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-02-14,data/11.06.2026/BTC-USDT-SWAP-L2orderbook-400lv-2026-02-14.tar.gz,458.01,"OKX L2 400lv JSONL (action snapshot/update; ts str ms; asks/bids=[price,size,#orders])",PRESENT,
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2025-11-23,data/11.06.2026/BTC-USDT-SWAP-trades-2025-11-23.zip,15.8,"CSV: instrument_name,trade_id,side,price,size,created_time(ms)",PRESENT,
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-02-01,data/11.06.2026/BTC-USDT-SWAP-trades-2026-02-01.zip,40.78,"CSV: instrument_name,trade_id,side,price,size,created_time(ms)",PRESENT,
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-02-15,data/11.06.2026/BTC-USDT-SWAP-trades-2026-02-15.zip,20.02,"CSV: instrument_name,trade_id,side,price,size,created_time(ms)",PRESENT,
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2025-11-19,,,,MISSING,window W1
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2025-11-19,,,,MISSING,window W1
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2025-11-19,,,,MISSING,window W1
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2025-11-20,,,,MISSING,window W1
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2025-11-20,,,,MISSING,window W1
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2025-11-20,,,,MISSING,window W1
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2025-11-21,,,,MISSING,window W1
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2025-11-21,,,,MISSING,window W1
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2025-11-21,,,,MISSING,window W1
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2025-11-22,,,,MISSING,window W1
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2025-11-22,,,,MISSING,window W1
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-02-11,,,,MISSING,window W2
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-02-11,,,,MISSING,window W2
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-02-11,,,,MISSING,window W2
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-02-12,,,,MISSING,window W2
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-02-12,,,,MISSING,window W2
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-02-12,,,,MISSING,window W2
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-02-13,,,,MISSING,window W2
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-02-13,,,,MISSING,window W2
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-02-13,,,,MISSING,window W2
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-02-14,,,,MISSING,window W2
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-02-14,,,,MISSING,window W2
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-01-28,,,,MISSING,window W3
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-01-28,,,,MISSING,window W3
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-01-28,,,,MISSING,window W3
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-01-29,,,,MISSING,window W3
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-01-29,,,,MISSING,window W3
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-01-29,,,,MISSING,window W3
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-01-30,,,,MISSING,window W3
+OKX,SWAP (perp),BTC-USDT-SWAP,orderbook_L2_400,2026-01-30,,,,MISSING,window W3
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-01-30,,,,MISSING,window W3
+Bybit,linear perpetual (Contract),BTCUSDT,trades,2026-01-31,,,,MISSING,window W3
+OKX,SWAP (perp),BTC-USDT-SWAP,trades,2026-01-31,,,,MISSING,window W3

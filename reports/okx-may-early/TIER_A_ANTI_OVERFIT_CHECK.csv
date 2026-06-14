@@ -1,0 +1,10 @@
+slice,alerts,winrate,pf,strong_caught
+full,24,29.17,1.227,3
+without_05_14,23,30.43,1.416,3
+without_05_15,24,29.17,1.227,3
+without_both,23,30.43,1.416,3
+first_half_03_11,14,28.57,1.297,2
+second_half_12_20,10,30.0,1.131,1
+dedup_60m,24,29.17,1.227,3
+dedup_120m,24,29.17,1.227,3
+dedup_240m,24,29.17,1.227,3

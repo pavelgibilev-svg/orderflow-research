@@ -1,0 +1,14 @@
+window_id,dates,source,net_pct,median_daily_range_pct,regime_used_label,regime_auto,agrees,status
+DOWN_NOV,2025-11-19..2025-11-22,v2okx:W1_NOVEMBER,-8.82,6.21,TREND_DOWN,TREND_DOWN,True,USED_in_v4_v5_v6
+DOWN_JAN,2026-01-28..2026-01-31,v2okx:W3_JANUARY,-11.79,5.52,TREND_DOWN,TREND_DOWN,True,USED_in_v4_v5_v6
+DOWN_APR,2024-04-12..2024-04-17,v2okx:W4_APRIL,-12.46,7.26,TREND_DOWN,TREND_DOWN,True,USED_in_v4_v5_v6
+DOWN_0327,2026-03-27..2026-03-30,okxhist,-2.86,3.49,TREND_DOWN,TREND_DOWN,True,USED_in_v4_v5_v6
+UP_0310,2026-03-10..2026-03-16,okxhist,9.43,3.37,TREND_UP,TREND_UP,True,USED_in_v4_v5_v6
+RANGE_0508,2026-05-08..2026-05-11,okxhist,1.98,1.75,RANGE_CHOP,RANGE_CHOP,True,USED_in_v4_v5_v6
+RANGE_0303,2026-03-03..2026-03-06,okxhist,-1.04,4.91,RANGE_CHOP,RANGE_CHOP,True,USED_in_v4_v5_v6
+BOUNCE_0512,2026-05-12..2026-05-15,okxhist,-2.77,3.23,REVERSAL_BOUNCE,TREND_DOWN,True,USED_in_v4_v5_v6
+OKX 2026-03-19..23,OKX 2026-03-19..23,okx-historical,-0.49,,,RANGE_CHOP/weak,,SEMI_UNUSED (only as v4 down ref candidate)
+OKX 2026-05-19..22,OKX 2026-05-19..22,okx-historical,0.5,,,RANGE_CHOP,,UNUSED
+OKX 2026-05-23..30,OKX 2026-05-23..30,okx-historical,,,,UNKNOWN,,UNUSED (not measured)
+OKX 2026-03-08..09,OKX 2026-03-08..09,okx-historical,,,,UNKNOWN,,UNUSED (not measured)
+OKX 2024 first-of-month (12 days),OKX 2024 first-of-month (12 days),okx-historical,,,,"UNKNOWN (monthly snapshots, not contiguous)",,UNUSED

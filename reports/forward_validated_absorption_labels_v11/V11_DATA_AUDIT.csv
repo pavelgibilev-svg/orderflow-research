@@ -1,0 +1,10 @@
+window,venue,symbol,date_range,data_types,per_minute_cache,used_v4_v10,background,suitable_for_absorption_labels,oos
+DOWN_NOV,OKX,BTC-USDT-SWAP,2025-11-19..2025-11-22,per-min mid+trades(cvd/taker)+L2,YES,YES,TREND_DOWN,YES,NO (in-sample)
+DOWN_JAN,OKX,BTC-USDT-SWAP,2026-01-28..2026-01-31,per-min mid+trades(cvd/taker)+L2,YES,YES,TREND_DOWN,YES,NO (in-sample)
+DOWN_APR,OKX,BTC-USDT-SWAP,2024-04-12..2024-04-17,per-min mid+trades(cvd/taker)+L2,YES,YES,TREND_DOWN,YES,NO (in-sample)
+DOWN_0327,OKX,BTC-USDT-SWAP,2026-03-27..2026-03-30,per-min mid+trades(cvd/taker),YES,YES,TREND_DOWN,YES,NO (in-sample)
+UP_0310,OKX,BTC-USDT-SWAP,2026-03-10..2026-03-16,per-min mid+trades(cvd/taker),YES,YES,TREND_UP,YES,NO (in-sample)
+RANGE_0508,OKX,BTC-USDT-SWAP,2026-05-08..2026-05-11,per-min mid+trades(cvd/taker),YES,YES,RANGE_CHOP,YES,NO (in-sample)
+RANGE_0303,OKX,BTC-USDT-SWAP,2026-03-03..2026-03-06,per-min mid+trades(cvd/taker),YES,YES,RANGE_CHOP,YES,NO (in-sample)
+BOUNCE_0512,OKX,BTC-USDT-SWAP,2026-05-12..2026-05-15,per-min mid+trades(cvd/taker),YES,YES,REVERSAL_BOUNCE,YES,NO (in-sample)
+OKX-historical 2026-03,OKX,BTC-USDT-SWAP,2026-03-01..2026-03-31,trades.csv.gz per-day,partial(3 cached),partial,MIXED,YES (build on demand),candidate

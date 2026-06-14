@@ -1,0 +1,2 @@
+template_id,n_clusters,independent_moments,hit2,hit2_rate,W,L,TO,pf,expectancy,windows,exchange_stability,overfit_risk,status
+TD_CROSS_CONFIRMED_MARKDOWN_SOFT_TEMPLATE,6,3,2,33.3,2,2,2,1.134,0.073,"[""W1_NOVEMBER"", ""W3_JANUARY""]",BOTH,HIGH,NEED_MORE_DATA

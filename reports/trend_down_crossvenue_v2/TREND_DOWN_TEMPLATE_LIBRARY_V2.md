@@ -1,0 +1,14 @@
+# TREND_DOWN TEMPLATE LIBRARY V2
+
+Build 2026-06-12T12:57:48+00:00 · RESEARCH/CALIBRATION (not production).
+
+| template | state | dir | status | windows | weak points |
+|---|---|---|:--:|---|---|
+| TD_ACTIVE_MARKDOWN_SHORT_TEMPLATE | ACTIVE_MARKDOWN | SHORT | **QUARANTINE** | [] | small n; 1 window; single exchange |
+| TD_FORCED_UNWIND_CONTINUATION_SHORT_TEMPLATE | FORCED_UNWIND | SHORT | **QUARANTINE** | [] | small n; 1 window; single exchange |
+| TD_ABSORPTION_AFTER_SELL_PRESSURE_NO_SHORT_OR_REVERSAL_WATCH | ABSORPTION_AFTER_SELL_PRESSURE | NO_SHORT/LONG_WATCH | **QUARANTINE** | [] | small n; 1 window; single exchange |
+| TD_NO_CONTROL_CHOP_NO_TRADE | NO_CONTROL_CHOP | NO_TRADE | **VETO_CANDIDATE** | ['W1_NOVEMBER', 'W3_JANUARY', 'W4_APRIL'] | none major |
+| TD_CROSS_VENUE_CONFIRMED_MARKDOWN_SHORT | MARKDOWN(any short) | SHORT | **QUARANTINE** | ['W1_NOVEMBER', 'W3_JANUARY'] | none major |
+| TD_CROSS_VENUE_DISAGREEMENT_VETO | DISAGREEMENT | VETO | **VETO_CANDIDATE** | ['W1_NOVEMBER', 'W3_JANUARY', 'W4_APRIL'] | none major |
+
+_No RESEARCH_CANDIDATE qualified — see final report._

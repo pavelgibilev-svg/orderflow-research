@@ -1,0 +1,11 @@
+metric,value
+zones_total,7
+zones_triggered,1
+zones_reached,1
+hit_rate_among_triggered,1
+status_INVALIDATED,3
+direction_LONG,3
+status_RESOLVED_REACHED,1
+direction_SHORT,4
+status_EXPIRED,1
+status_NO_TRIGGER,2

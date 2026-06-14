@@ -1,0 +1,5 @@
+date,valid,l2_rows,trades_rows,optional_present,optional_missing,quality_flag_tick_count,snapshots_exported,zones_total,zones_candidates,zones_confirmed,zones_triggered,reached_4h,reached_8h,reached_24h,failed_no_trigger_invalidated,baseline_24h_up_pct,baseline_24h_down_pct,triggered_hit_rate_pct,notes,errored
+2026-01-01,yes,9480504,1056983,derivative_ticker|book_ticker|liquidations,,0,0,4,4,4,2,0,0,0,4,0.00,0.00,0.00,ok,
+2026-02-01,yes,23129968,6759515,derivative_ticker|book_ticker|liquidations,,0,0,3,3,3,1,0,0,1,2,0.00,0.00,100.00,ok,
+2026-03-01,yes,28387554,5961363,derivative_ticker|book_ticker|liquidations,,1,0,7,7,6,1,0,0,1,6,0.00,0.00,100.00,ok,
+2026-04-01,yes,17950039,4104211,derivative_ticker|book_ticker|liquidations,,0,0,9,9,8,5,0,0,0,9,0.00,0.00,0.00,ok,

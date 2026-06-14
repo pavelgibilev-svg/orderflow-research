@@ -1,0 +1,12 @@
+section,key,value
+cluster_level,bybit_only_clusters,89
+cluster_level,okx_clusters,0
+cluster_level,overlapping_full_days,0
+cluster_level,both_confirmed_clusters,N/A (OKX has only last day/window, no in-window trades)
+cluster_level,single_venue_only,89
+cluster_level,status,SINGLE_EXCHANGE_ONLY
+price_agreement,overlap_2025-11-22,mean_diff 0.4bps / median_abs 0.7bps / ret_corr 0.995
+price_agreement,overlap_2026-01-31,mean_diff -0.0bps / median_abs 0.6bps / ret_corr 0.998
+price_agreement,overlap_2026-02-14,mean_diff 0.1bps / median_abs 0.5bps / ret_corr 0.992
+price_agreement,verdict,Bybit and OKX reconstructed mids AGREE <1bps with 0.99+ return correlation on all 3 overlap days
+orderflow_confirmation,status,N/A (needs full-coverage OKX L2 + in-window trades on both venues)

@@ -1,0 +1,7 @@
+model,trades,wins,losses,timeouts,winrate_pct,expectancy_after_cost_pct,pf_after_cost,total_return_after_cost_pct,max_consecutive_losses,no_trade_days,alerts_per_day,long_winrate,short_winrate,fake_accumulation,wrong_direction,correct_dir_no_2pct,stop_no_2pct,timeout_negative
+M0_absolute_march,9,2,2,5,22.22,0.1473,1.35,1.3256,1,0,1.0,0.0,40.0,0,4,4,2,1
+M1_norm_pctile,9,1,3,5,11.11,-0.2275,0.623,-2.0474,2,0,1.0,0.0,33.33,0,5,4,3,1
+M2_norm_zscore,9,2,2,5,22.22,0.1614,1.384,1.4526,1,0,1.0,0.0,50.0,0,4,4,2,1
+M3_dir_guard,6,1,2,3,16.67,-0.1679,0.713,-1.0074,3,3,0.67,0.0,33.33,0,3,2,2,1
+M4_noise_confluence,6,1,2,3,16.67,-0.0495,0.91,-0.2968,1,3,0.67,0.0,50.0,0,3,3,2,0
+M5_live_valid,6,1,2,3,16.67,-0.0495,0.91,-0.2968,1,3,0.67,0.0,50.0,0,3,3,2,0

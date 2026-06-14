@@ -1,14 +1,104 @@
+# =====================================================================
+# AdShort / orderflow-research .gitignore
+# Policy: commit CODE + small RESEARCH ARTIFACTS (md, small csv scorecards).
+# NEVER commit raw market data, L2/trades/orderbook dumps, caches, secrets.
+# All raw market data lives under data/ and is excluded wholesale.
+# =====================================================================
+
+# ----- dependencies / build output -----
 node_modules/
 dist/
-/data/
-/reports/
-*.zip
-*.csv
-*.xlsx
-*.log
+build/
+.venv/
+venv/
+env/
+
+# ----- python / tooling caches -----
 __pycache__/
 *.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ----- secrets (NEVER commit) -----
 .env
 .env.*
-Binance data archived/
 !.env.example
+secrets.*
+api_keys.*
+credentials.*
+*.key
+*.pem
+*.p12
+
+# ----- raw market-data directories (NEVER commit) -----
+/data/
+raw_data/
+market_data/
+datasets/
+windows/
+cache/
+caches/
+tmp/
+temp/
+logs/
+/Binance data archived/
+
+# ----- heavy / binary data file types anywhere -----
+*.csv.gz
+*.gz
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+*.npy
+*.npz
+*.bin
+*.zst
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.jsonl
+*.xlsx
+*.log
+
+# NOTE: we deliberately do NOT use bare *trades* / *orderbook* / *depth* globs,
+# because research scorecards legitimately contain those words in their names
+# (e.g. *_RS1_BASELINE_TRADES.csv, *_SELECTED_VS_SKIPPED_WINNERS.csv). All such
+# RAW data is confined to data/ and already excluded above.
+
+# ----- CSV policy: ignore by default, keep small report scorecards -----
+*.csv
+!reports/**/*.csv
+
+# ----- research caches inside reports/ (exclude; these are data, not reports) -----
+reports/**/_series/
+reports/**/_l2cache/
+reports/**/_l2cache_*/
+reports/**/_normalized/
+reports/**/_cache/
+reports/**/*.json
+
+# ----- large raw-ish report CSV dumps (>1MB; per-event/per-minute data, not scorecards) -----
+reports/event_trigger_regime_control_v4/EVENT_CANDIDATES_ALL_REGIMES.csv
+reports/event_trigger_regime_control_v4/EVENT_OUTCOMES_ALL_REGIMES.csv
+reports/forward_validated_absorption_labels_v11/V11_FORWARD_LABELS.csv
+reports/forward_validated_absorption_labels_v11/V11_SELL_PRESSURE_CANDIDATES.csv
+reports/strategy-calibration/MARCH_DYNAMIC_L2_FEATURE_DATASET.csv
+reports/strategy-calibration/MARCH_DYNAMIC_L2_SELECTOR_SEARCH.csv
+reports/strategy-calibration/MARCH_STAGE_SPECIFIC_SELECTOR_RESULTS.csv
+reports/trend_down_event_trigger_v3/EVENT_CANDIDATES_RAW.csv
+reports/trend_down_event_trigger_v3/EVENT_CANDIDATES_UNIQUE.csv
+
+# ----- misc -----
+OFFRW.zip
+.DS_Store
+Thumbs.db

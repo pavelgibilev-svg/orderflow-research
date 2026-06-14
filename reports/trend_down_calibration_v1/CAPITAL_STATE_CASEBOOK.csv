@@ -1,0 +1,90 @@
+cluster_id,exchange,date,window_id,capital_state_candidate,confidence,direction_candidate,hit2,hit2_5,hit3,loss,timeout,evidence_summary,why_this_state,why_not_other_state,notes
+W1-SHORT-0,Bybit,2025-11-19,W1,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.1235 pm60=None bounce=0.674
+W1-SHORT-1,Bybit,2025-11-19,W1,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,0,1,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.411 pm60=-0.425 bounce=0.733
+W1-SHORT-2,Bybit,2025-11-19,W1,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.1657 pm60=-0.027 bounce=0.275
+W1-SHORT-3,Bybit,2025-11-19,W1,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,1,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.2229 pm60=-0.362 bounce=0.657
+W1-SHORT-4,Bybit,2025-11-20,W1,NO_CONTROL_CHOP,0.4,SHORT,0,0,0,1,0,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=-0.0105 pm60=0.243 bounce=0.542
+W1-SHORT-5,Bybit,2025-11-20,W1,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.3387 pm60=-0.164 bounce=0.283
+W1-SHORT-6,Bybit,2025-11-20,W1,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.2704 pm60=-0.288 bounce=0.477
+W1-SHORT-7,Bybit,2025-11-20,W1,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.2172 pm60=-0.205 bounce=0.898
+W1-SHORT-8,Bybit,2025-11-21,W1,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.2661 pm60=-0.446 bounce=0.665
+W1-SHORT-9,Bybit,2025-11-21,W1,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,1,1,1,0,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.2416 pm60=-0.125 bounce=0.697
+W1-SHORT-10,Bybit,2025-11-21,W1,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.0703 pm60=-1.187 bounce=1.033
+W1-SHORT-11,Bybit,2025-11-21,W1,NO_CONTROL_CHOP,0.4,SHORT,1,0,0,0,0,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=0.0432 pm60=-0.514 bounce=0.831
+W1-SHORT-12,Bybit,2025-11-21,W1,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,1,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.0517 pm60=0.285 bounce=2.786
+W1-SHORT-13,Bybit,2025-11-21,W1,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,1,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.1526 pm60=-1.308 bounce=0.876
+W1-SHORT-14,Bybit,2025-11-21,W1,NO_CONTROL_CHOP,0.4,SHORT,0,0,0,0,1,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=0.0204 pm60=-0.823 bounce=1.41
+W1-SHORT-15,Bybit,2025-11-21,W1,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,0,1,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.0967 pm60=0.042 bounce=1.335
+W1-SHORT-16,Bybit,2025-11-21,W1,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.1549 pm60=0.01 bounce=0.895
+W1-SHORT-17,Bybit,2025-11-22,W1,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.0759 pm60=0.169 bounce=0.667
+W1-LONG-18,Bybit,2025-11-19,W1,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,1,0,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=0.045 pm60=-0.578 bounce=0.537
+W1-LONG-19,Bybit,2025-11-19,W1,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.233 pm60=-0.593 bounce=0.634
+W1-LONG-20,Bybit,2025-11-19,W1,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,1,0,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.2613 pm60=-0.739 bounce=0.477
+W1-LONG-21,Bybit,2025-11-20,W1,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.2608 pm60=-0.731 bounce=0.888
+W1-LONG-22,Bybit,2025-11-20,W1,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,1,0,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=0.0335 pm60=-0.565 bounce=0.503
+W1-LONG-23,Bybit,2025-11-20,W1,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.1741 pm60=-0.723 bounce=1.2
+W1-LONG-24,Bybit,2025-11-20,W1,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.2733 pm60=-0.59 bounce=1.04
+W1-LONG-25,Bybit,2025-11-21,W1,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.1915 pm60=-0.604 bounce=0.735
+W1-LONG-26,Bybit,2025-11-21,W1,NO_CONTROL_CHOP,0.4,LONG,1,0,0,0,0,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=-0.0001 pm60=-2.57 bounce=1.857
+W1-LONG-27,Bybit,2025-11-21,W1,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.1004 pm60=-1.478 bounce=1.71
+W1-LONG-28,Bybit,2025-11-21,W1,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.2129 pm60=-0.766 bounce=1.166
+W1-LONG-29,Bybit,2025-11-22,W1,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,0,1,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=0.087 pm60=-0.776 bounce=0.571
+W1-LONG-30,Bybit,2025-11-22,W1,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.3523 pm60=-0.62 bounce=0.718
+W1-LONG-31,Bybit,2025-11-22,W1,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=-0.2384 pm60=-0.725 bounce=0.715
+W1-LONG-32,Bybit,2025-11-22,W1,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.2408 pm60=-0.575 bounce=0.302
+W1-LONG-33,Bybit,2025-11-22,W1,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,0,1,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.0669 pm60=-0.555 bounce=0.357
+W2-SHORT-0,Bybit,2026-02-11,W2,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.0519 pm60=-0.278 bounce=0.286
+W2-SHORT-1,Bybit,2026-02-11,W2,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,0,1,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.1982 pm60=-0.832 bounce=0.544
+W2-SHORT-2,Bybit,2026-02-11,W2,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,1,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.145 pm60=-0.147 bounce=0.49
+W2-SHORT-3,Bybit,2026-02-11,W2,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,1,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.153 pm60=0.181 bounce=0.795
+W2-SHORT-4,Bybit,2026-02-11,W2,UNKNOWN,0.2,SHORT,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.0661 pm60=0.156 bounce=1.053
+W2-SHORT-5,Bybit,2026-02-11,W2,UNKNOWN,0.2,SHORT,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.0547 pm60=-0.7 bounce=1.241
+W2-SHORT-6,Bybit,2026-02-11,W2,NO_CONTROL_CHOP,0.4,SHORT,0,0,0,0,1,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=-0.043 pm60=-0.1 bounce=0.638
+W2-SHORT-7,Bybit,2026-02-12,W2,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,0,1,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.1938 pm60=-0.42 bounce=0.512
+W2-SHORT-8,Bybit,2026-02-12,W2,NO_CONTROL_CHOP,0.4,SHORT,0,0,0,0,1,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=-0.0221 pm60=-0.17 bounce=0.47
+W2-SHORT-9,Bybit,2026-02-12,W2,NO_CONTROL_CHOP,0.4,SHORT,1,0,0,0,0,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=0.0228 pm60=0.101 bounce=0.515
+W2-SHORT-10,Bybit,2026-02-12,W2,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,1,0,0,0,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.063 pm60=-0.724 bounce=1.232
+W2-SHORT-11,Bybit,2026-02-12,W2,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,1,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.1045 pm60=-0.61 bounce=0.62
+W2-SHORT-12,Bybit,2026-02-13,W2,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.051 pm60=0.003 bounce=0.274
+W2-SHORT-13,Bybit,2026-02-13,W2,UNKNOWN,0.2,SHORT,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.1005 pm60=0.154 bounce=0.305
+W2-SHORT-14,Bybit,2026-02-13,W2,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=-0.068 pm60=0.172 bounce=0.933
+W2-SHORT-15,Bybit,2026-02-14,W2,UNKNOWN,0.2,SHORT,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.5405 pm60=0.078 bounce=0.163
+W2-SHORT-16,Bybit,2026-02-14,W2,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=-0.3377 pm60=-0.113 bounce=0.239
+W2-SHORT-17,Bybit,2026-02-14,W2,ACTIVE_MARKDOWN,0.5,SHORT,0,0,0,0,1,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=0.037 pm60=-0.316 bounce=0.459
+W2-SHORT-18,Bybit,2026-02-14,W2,NO_CONTROL_CHOP,0.4,SHORT,0,0,0,0,1,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=0.0074 pm60=-0.245 bounce=0.52
+W2-LONG-19,Bybit,2026-02-11,W2,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.3286 pm60=-0.528 bounce=0.691
+W2-LONG-20,Bybit,2026-02-11,W2,UNKNOWN,0.2,LONG,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.0542 pm60=-1.302 bounce=2.537
+W2-LONG-21,Bybit,2026-02-11,W2,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.1838 pm60=-0.916 bounce=0.698
+W2-LONG-22,Bybit,2026-02-12,W2,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.1944 pm60=-0.541 bounce=0.468
+W2-LONG-23,Bybit,2026-02-12,W2,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,0,1,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=0.0868 pm60=-0.606 bounce=0.313
+W2-LONG-24,Bybit,2026-02-12,W2,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.1572 pm60=-0.902 bounce=1.099
+W2-LONG-25,Bybit,2026-02-13,W2,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.4678 pm60=-0.503 bounce=0.716
+W2-LONG-26,Bybit,2026-02-13,W2,UNKNOWN,0.2,LONG,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.1293 pm60=-0.512 bounce=0.419
+W2-LONG-27,Bybit,2026-02-13,W2,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,0,1,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.261 pm60=-0.573 bounce=0.421
+W2-LONG-28,Bybit,2026-02-14,W2,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.2495 pm60=-0.683 bounce=1.072
+W2-LONG-29,Bybit,2026-02-14,W2,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.2169 pm60=-0.616 bounce=0.662
+W3-SHORT-0,Bybit,2026-01-28,W3,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=-0.3055 pm60=None bounce=0.268
+W3-SHORT-1,Bybit,2026-01-28,W3,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.1594 pm60=0.124 bounce=0.332
+W3-SHORT-2,Bybit,2026-01-28,W3,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,0,1,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.1985 pm60=-0.148 bounce=0.506
+W3-SHORT-3,Bybit,2026-01-28,W3,NO_CONTROL_CHOP,0.4,SHORT,0,0,0,0,1,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=-0.0223 pm60=0.275 bounce=0.609
+W3-SHORT-4,Bybit,2026-01-29,W3,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,0,1,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.325 pm60=-0.553 bounce=0.504
+W3-SHORT-5,Bybit,2026-01-29,W3,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.0881 pm60=0.092 bounce=0.891
+W3-SHORT-6,Bybit,2026-01-30,W3,NO_CONTROL_CHOP,0.4,SHORT,0,0,0,0,1,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=0.0198 pm60=-0.309 bounce=1.156
+W3-SHORT-7,Bybit,2026-01-30,W3,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.4009 pm60=0.152 bounce=0.182
+W3-SHORT-8,Bybit,2026-01-30,W3,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,1,0,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.1458 pm60=0.232 bounce=0.709
+W3-SHORT-9,Bybit,2026-01-30,W3,UNKNOWN,0.2,SHORT,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.6827 pm60=-0.157 bounce=0.261
+W3-SHORT-10,Bybit,2026-01-31,W3,UNKNOWN,0.2,SHORT,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.5512 pm60=-0.227 bounce=0.242
+W3-SHORT-11,Bybit,2026-01-31,W3,DISTRIBUTION_INTO_BOUNCE,0.55,SHORT,0,0,0,0,1,bounce>=0.4% into pivot; ask-heavy depth (supply); down/flat background,"buyers stall, sellers reload at highs",not active markdown: required a bounce first,depth_imb=-0.0516 pm60=-0.819 bounce=3.408
+W3-LONG-12,Bybit,2026-01-28,W3,UNKNOWN,0.2,LONG,0,0,0,0,1,insufficient evidence,cannot classify honestly,—,depth_imb=0.1258 pm60=-0.674 bounce=0.593
+W3-LONG-13,Bybit,2026-01-28,W3,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.2315 pm60=-1.128 bounce=0.538
+W3-LONG-14,Bybit,2026-01-28,W3,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,0,1,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.1385 pm60=-0.65 bounce=0.566
+W3-LONG-15,Bybit,2026-01-29,W3,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,0,1,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.2047 pm60=-0.527 bounce=0.383
+W3-LONG-16,Bybit,2026-01-29,W3,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.2928 pm60=-0.595 bounce=0.626
+W3-LONG-17,Bybit,2026-01-30,W3,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,1,0,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.1424 pm60=-0.597 bounce=0.391
+W3-LONG-18,Bybit,2026-01-30,W3,NO_CONTROL_CHOP,0.4,LONG,0,0,0,0,1,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=-0.044 pm60=-1.109 bounce=0.653
+W3-LONG-19,Bybit,2026-01-30,W3,ACTIVE_MARKDOWN,0.5,LONG,1,0,0,0,0,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.0116 pm60=-0.524 bounce=0.364
+W3-LONG-20,Bybit,2026-01-30,W3,NO_CONTROL_CHOP,0.4,LONG,1,0,0,0,0,depth_imb ~0; no clear control,"flow flips, no capital control",no dominant side,depth_imb=-0.0331 pm60=-0.707 bounce=1.389
+W3-LONG-21,Bybit,2026-01-30,W3,UNKNOWN,0.2,LONG,1,0,0,0,0,insufficient evidence,cannot classify honestly,—,depth_imb=-0.2022 pm60=-1.507 bounce=1.541
+W3-LONG-22,Bybit,2026-01-31,W3,ACTIVE_MARKDOWN,0.5,LONG,0,0,0,1,0,down pm60<=-0.3; weak/no bounce; no bid dominance,"seller in control, easy downside",not distribution: bounce too weak,depth_imb=-0.0292 pm60=-0.622 bounce=0.477
+W3-LONG-23,Bybit,2026-01-31,W3,UNKNOWN,0.2,LONG,0,0,0,1,0,insufficient evidence,cannot classify honestly,—,depth_imb=0.0584 pm60=-0.606 bounce=0.638
+W3-LONG-24,Bybit,2026-01-31,W3,ABSORPTION_AFTER_SELL_PRESSURE,0.55,LONG,0,0,0,1,0,prior markdown pm180<=-1; bid-heavy depth_imb>0.15; near recent low,supply being absorbed near low,not active markdown: bid depth dominant -> short dangerous,depth_imb=0.2107 pm60=-1.258 bounce=1.91

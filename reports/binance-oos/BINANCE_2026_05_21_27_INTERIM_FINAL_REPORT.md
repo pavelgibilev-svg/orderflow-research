@@ -1,0 +1,51 @@
+# BINANCE_2026_05_21_27_INTERIM — FINAL INTERIM REPORT (7 of 10 days)
+
+**Build:** 2026-06-01T18:53:04+00:00
+**STATUS: INTERIM / PARTIAL — not the final 10-day OOS verdict. Small sample.**
+
+Interim days: ['2026-05-21', '2026-05-22', '2026-05-23', '2026-05-24', '2026-05-25', '2026-05-26', '2026-05-27']
+Pending (still computing / to add): ['2026-05-28', '2026-05-29', '2026-05-30']
+
+## Engine (7 days)
+- zones 123 · triggered 70 · reached_raw 8 · primary_unique 2 · failed_triggered 62 · LONG 72 / SHORT 51
+
+## RS1 vs RS2 (Binance OOS interim)
+
+| model | trades | W | L | TO | winrate% | exp_aft% | PF | totRet% | maxCL |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| RS1 | 7 | 1 | 3 | 3 | 14.29 | -0.5315 | 0.375 | -3.7205 | 5 |
+| RS2 (partial) | 3 | 1 | 0 | 2 | 33.33 | 0.6532 | 8.217 | 1.9595 | 1 |
+
+## OKX (IS) vs Binance (OOS interim)
+- OKX RS1: 29 tr, 62.07%, exp +0.6475, PF 2.258  →  Binance RS1 (7d): 7 tr, 14.29%, exp -0.5315, PF 0.375
+- **BINANCE_INTERIM_TRANSFER_STATUS = UNKNOWN** (UNKNOWN if n<15 — honest interim).
+
+## Final interim flags
+```
+BINANCE_INTERIM_DONE = YES
+BINANCE_INTERIM_DAYS = ['2026-05-21', '2026-05-22', '2026-05-23', '2026-05-24', '2026-05-25', '2026-05-26', '2026-05-27']
+BINANCE_MAIN_10D_CHAIN_STILL_RUNNING = NO
+BINANCE_INTERIM_RS1_DONE = YES
+BINANCE_INTERIM_RS1_TRADES = 7
+BINANCE_INTERIM_RS1_WINS = 1
+BINANCE_INTERIM_RS1_LOSSES = 3
+BINANCE_INTERIM_RS1_TIMEOUTS = 3
+BINANCE_INTERIM_RS1_WINRATE = 14.29
+BINANCE_INTERIM_RS1_EXPECTANCY_AFTER_COST = -0.5315
+BINANCE_INTERIM_RS1_PF_AFTER_COST = 0.375
+BINANCE_INTERIM_RS2_DONE = PARTIAL
+BINANCE_INTERIM_RS2_TRUE_OI_AVAILABLE = NO
+BINANCE_INTERIM_RS2_TRADES = 3
+BINANCE_INTERIM_RS2_WINRATE = 33.33
+BINANCE_INTERIM_RS2_EXPECTANCY_AFTER_COST = 0.6532
+BINANCE_INTERIM_RS2_PF_AFTER_COST = 8.217
+BINANCE_INTERIM_RS2_IMPROVES_RS1 = YES
+BINANCE_INTERIM_TRANSFER_STATUS = UNKNOWN
+NO_THRESHOLD_RETUNING_DONE = YES
+CANONICAL_LEDGER_USED = YES
+TIMEOUT_PNL_EXACT = YES
+FUTURE_LEAK_FOUND = NO
+READY_FOR_FINAL_10D_REPORT = NO
+```
+
+**Caveat:** INTERIM on 7 of 10 completed days (05-21..27). Small n; NOT conclusive. RS2 is PARTIAL (no true-OI stream on Binance recorder). Final 10-day report to be rebuilt once 05-28..30 engine outputs are all present.

@@ -1,0 +1,12 @@
+date,direction,zone_id,outcome,reason_class,pnl_after_cost,mfe_pct,mae_pct,tz_room_to_run_pct,tz_has_target_ge_2pct,model_B_would_skip,tz_void_thin_path_score,tz_opposing_wall_risk,would_BE_C1_save
+2026-03-06,LONG,BTC-USDT-SWAP-LONG-1772834507000-42,LOSS,stop_no_2pct_either_dir,-1.64,0.3053,1.5755,0.1227,True,False,0.1002,44.0,False
+2026-03-07,LONG,BTC-USDT-SWAP-LONG-1772852776000-6,LOSS,stop_no_2pct_either_dir,-1.64,0.2766,1.6037,0.0793,False,True,0.0965,69.0,False
+2026-03-11,SHORT,BTC-USDT-SWAP-SHORT-1773188193000-2,LOSS,stop_no_2pct_either_dir,-1.64,1.4376,1.5282,0.0688,False,True,0.0944,105.0,True
+2026-03-12,SHORT,BTC-USDT-SWAP-SHORT-1773273641000-1,TIMEOUT,timeout_negative,-0.6895,1.3731,0.9418,6.0,True,False,0.095,72.0,True
+2026-03-16,SHORT,BTC-USDT-SWAP-SHORT-1773626785000-7,LOSS,correct_direction_but_no_2pct,-1.64,0.5466,1.5274,0.1031,False,True,0.0968,74.0,False
+2026-03-20,LONG,BTC-USDT-SWAP-LONG-1773993061000-19,LOSS,correct_direction_but_no_2pct,-1.64,0.6772,1.5009,0.0934,False,True,0.0975,58.0,False
+2026-03-21,LONG,BTC-USDT-SWAP-LONG-1774061201000-7,LOSS,stop_no_2pct_either_dir,-1.64,0.5286,1.5737,0.1175,False,True,0.0965,62.0,False
+2026-03-25,LONG,BTC-USDT-SWAP-LONG-1774416472000-13,TIMEOUT,timeout_negative,-1.1207,1.0992,1.0718,0.1527,False,True,0.1012,47.0,True
+2026-03-26,LONG,BTC-USDT-SWAP-LONG-1774484096000-2,LOSS,stop_no_2pct_either_dir,-1.64,0.2088,1.5054,0.1152,False,True,0.0973,66.0,False
+2026-03-27,LONG,BTC-USDT-SWAP-LONG-1774576895000-6,LOSS,stop_no_2pct_either_dir,-1.64,0.1123,1.8038,0.0921,False,True,0.0981,50.0,False
+2026-03-28,LONG,BTC-USDT-SWAP-LONG-1774679676000-13,TIMEOUT,timeout_negative,0.2273,1.3281,0.4855,0.0504,False,True,0.0956,76.0,True

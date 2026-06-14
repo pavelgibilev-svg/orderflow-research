@@ -1,0 +1,9 @@
+feature,covered_2pct_move_n,covered_2pct_move_freq,wrong_direction_n,wrong_direction_freq,noisy_partial_1_5pct_n,noisy_partial_1_5pct_freq,missed_no_move_in_4h_n,missed_no_move_in_4h_freq,sep_strength
+defended_long,60,35.0,41,58.54,27,51.85,409,41.32,6.32
+ofi_aligned,60,63.33,41,51.22,27,70.37,409,57.7,5.63
+filter_kept,60,26.67,41,34.15,27,7.41,409,21.76,4.91
+cycles_seen_ge_5,60,98.33,41,92.68,27,96.3,409,93.89,4.44
+flow_multiplier_strong,60,33.33,41,60.98,27,33.33,409,29.58,3.75
+absorb_score_high,60,100.0,41,100.0,27,100.0,409,100.0,0.0
+refill_score_present,60,100.0,41,100.0,27,100.0,409,100.0,0.0
+range_compression,60,100.0,41,100.0,27,100.0,409,100.0,0.0

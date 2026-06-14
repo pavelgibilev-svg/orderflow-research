@@ -1,0 +1,7 @@
+selector,trades,skipped,wins,losses,timeouts,winrate_pct,expectancy_after_cost_pct,pf_after_cost,total_return_after_cost_pct,max_consecutive_losses,h1_winrate,h2_winrate,long_winrate,short_winrate
+S1_enhanced_only,29,0,18,8,3,62.07,0.6475,2.258,18.7771,3,71.43,53.33,55.56,72.73
+S2_enhanced_targetzone,4,25,2,1,1,50.0,0.3476,1.597,1.3905,1,50.0,0.0,0.0,66.67
+S3_enhanced_target_void,2,12,1,1,0,50.0,0.11,1.134,0.22,1,50.0,0.0,0.0,100.0
+S5_absorption_reversal_short_target,2,8,1,0,1,50.0,0.5853,2.698,1.1705,1,50.0,0.0,0.0,50.0
+S5_absorption_reversal_long_target,1,16,0,1,0,0.0,-1.64,0.0,-1.64,1,0.0,0.0,0.0,0.0
+S6_EV_positive,4,0,2,1,1,50.0,0.3476,1.597,1.3905,1,50.0,0.0,0.0,66.67

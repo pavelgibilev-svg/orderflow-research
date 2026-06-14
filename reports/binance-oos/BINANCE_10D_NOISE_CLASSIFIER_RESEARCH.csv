@@ -1,0 +1,8 @@
+rule,rejected,noise_removed,good_lost,wrongdir_removed,stop_removed,kept_n,kept_winrate,kept_pf,kept_expectancy
+R1_LONG_bear_no_reclaim,51,29,10,34,28,102,20.59,1.127,0.0613
+R2_SHORT_bull_no_rejection,7,5,0,4,1,146,21.23,0.841,-0.0992
+R3_ofi_direction_conflict,102,48,23,50,34,51,15.69,0.643,-0.2186
+R4_no_reclaim_after_hit,129,61,27,64,43,24,16.67,0.638,-0.2226
+R5_high_entropy,0,0,0,0,0,153,20.26,0.818,-0.1137
+R6_taker_imbalance_conflict,78,41,14,36,30,75,22.67,1.022,0.0115
+R7_low_uniqueness_vs_prior,71,32,16,35,22,82,18.29,0.769,-0.153

@@ -1,0 +1,11 @@
+family,n,strong,noise,base_strong_pct,top_features,enough_sample
+UNCLEAR,169,6,161,3.6,book_entropy_top25:0.798; supportive_taker_imb_15m:-0.685; eng_ofi:0.648,YES
+RANGE_FADE_HIGH_TO_LOW,44,7,32,15.9,range_pos:-0.777; swept_below:0.743; supportive_taker_imb_15m:0.635,YES
+RANGE_FADE_LOW_TO_HIGH,42,4,35,9.5,uniq_score_pctile_vs_prior:1.57; eng_ofi:-0.813; range_pos:0.553,WEAK
+LIQUIDITY_SWEEP_REVERSAL,35,2,29,5.7,n/a,WEAK
+SLOW_GRIND_CONTINUATION,30,13,0,43.3,n/a,YES
+ABSORPTION_REVERSAL,23,1,20,4.3,n/a,WEAK
+FALSE_BREAKOUT_RECLAIM,22,1,19,4.5,n/a,WEAK
+BREAKOUT_CONTINUATION,7,0,6,0.0,n/a,WEAK
+BREAKOUT_RETEST,7,0,7,0.0,n/a,WEAK
+TREND_CONTINUATION,3,0,3,0.0,sample<4,NO

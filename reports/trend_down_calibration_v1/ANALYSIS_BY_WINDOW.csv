@@ -1,0 +1,4 @@
+window_id,dates,net_pct,trend_down_confirmed,clusters,hit2,hit2_5,hit3,loss,timeout,dominant_capital_state,best_state,worst_state,evidence_high_sep,evidence_failed,notes
+W1,2025-11-19..2025-11-22,-8.86,YES,34,9,1,1,11,14,UNKNOWN,NO_CONTROL_CHOP,ACTIVE_MARKDOWN,"['effort_vs_result', 'initiative_control']","['absorption_refill', 'background_alignment', 'liquidity_execution']",true markdown window
+W2,2026-02-11..2026-02-14,1.42,NO,30,5,0,0,9,16,UNKNOWN,NO_CONTROL_CHOP,ACTIVE_MARKDOWN,"['effort_vs_result', 'initiative_control']",['liquidity_execution'],NOT a true TREND_DOWN window (bounced)
+W3,2026-01-28..2026-01-31,-11.77,YES,25,5,0,0,7,13,UNKNOWN,NO_CONTROL_CHOP,DISTRIBUTION_INTO_BOUNCE,"['initiative_control', 'effort_vs_result']","['not_overextended', 'liquidity_execution']",true markdown window

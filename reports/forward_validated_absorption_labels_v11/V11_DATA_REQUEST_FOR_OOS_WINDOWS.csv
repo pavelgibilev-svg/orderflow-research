@@ -1,0 +1,10 @@
+capital_state,windows_needed,current_gap,data_types,venue_symbol,why
+ACTIVE_MARKDOWN,1,have 4 TREND_DOWN; ok-ish,trades(+L2),OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for ACTIVE_MARKDOWN
+SELL_PRESSURE_ABSORBED,3,no dedicated absorbed/reversal window; only sub-segments,trades(+L2) — need clear failed-breakdown days,OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for SELL_PRESSURE_ABSORBED
+ACCUMULATION_UNDER_PRESSURE,2,"only range sub-segments, in-sample",trades(+L2),OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for ACCUMULATION_UNDER_PRESSURE
+DISTRIBUTION_INTO_DEMAND,2,only range sub-segments; no gate covers it,trades(+L2),OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for DISTRIBUTION_INTO_DEMAND
+ACTIVE_MARKUP,2,only 1 TREND_UP window total,trades(+L2),OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for ACTIVE_MARKUP
+NO_CONTROL_CHOP,1,plenty of chop minutes but not a clean window,trades,OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for NO_CONTROL_CHOP
+UPTREND,2,only 1 TREND_UP window = binding limitation,trades(+L2),OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for UPTREND
+RANGE,2,"2 range windows, in-sample",trades(+L2),OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for RANGE
+HIGH_VOL_FAST_MOVE,1,none isolated,trades(+L2)+liquidations+OI,OKX BTC-USDT-SWAP (or Bybit),forward-label OOS validation for HIGH_VOL_FAST_MOVE

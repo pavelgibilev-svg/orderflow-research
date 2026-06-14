@@ -1,0 +1,9 @@
+rule,threshold_source,sel_trades,wins,losses,timeouts,winrate,pf,expectancy,alerts_per_day,no_trade_days,good_captured,good_total,noise_rejected,overfit_risk
+O1_uniqueness_high,OKX_FROZEN,24,11,9,4,45.83,1.384,0.2474,0.83,5,55,382,479,LOW
+O2_initiative_shift,OKX_FROZEN,26,10,13,3,38.46,0.905,-0.0782,0.9,3,119,382,387,MED
+O3_reclaim_rejection,OKX_FROZEN,29,15,9,5,51.72,1.831,0.456,1.0,0,315,382,92,LOW
+O4_thin_path,OKX_FROZEN,29,16,8,5,55.17,2.172,0.5767,1.0,0,354,382,52,LOW
+O5_entropy_compression_EXPLORATORY,EXPLORATORY_NOT_FROZEN,0,0,0,0,0.0,,,0.0,29,0,382,570,HIGH
+O6_regime_continuation,OKX_FROZEN,29,15,9,5,51.72,1.761,0.4349,1.0,0,224,382,266,LOW
+O7_reversal_only_proof,OKX_FROZEN,18,7,9,2,38.89,0.916,-0.0686,0.62,11,44,382,478,MED
+O8_confluence_ge3,OKX_FROZEN,29,15,9,5,51.72,1.831,0.456,1.0,0,318,382,90,LOW

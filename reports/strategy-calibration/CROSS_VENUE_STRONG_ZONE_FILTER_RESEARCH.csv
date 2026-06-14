@@ -1,0 +1,7 @@
+hypothesis,kept,strong_captured,precision_strong,recall_strong,base_precision,kept_winrate,kept_pf,kept_expectancy
+H1_confirmation,100,24,0.24,0.4,0.176,28.0,0.893,-0.0727
+H2_no_divergence,226,33,0.146,0.55,0.176,19.91,0.794,-0.1275
+H4_reclaim,115,23,0.2,0.383,0.176,25.22,0.926,-0.0453
+H5_reclaim_and_confirm,42,13,0.31,0.217,0.176,35.71,1.145,0.0928
+H6_no_conflict_with_support,226,33,0.146,0.55,0.176,19.91,0.794,-0.1275
+baseline_all,340,60,0.176,1.0,0.176,23.24,0.914,-0.052

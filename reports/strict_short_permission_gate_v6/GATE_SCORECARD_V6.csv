@@ -1,0 +1,7 @@
+gate,allowed_n,event_gate_pf,randgate_pf,random_all_pf,up_blocked_pct,down_retained_pct,gate_helps,event_adds,overfilter,status
+OLD,5752,1.349,1.638,1.416,62.4,47.1,True,False,False,v5_reference
+GATE_6A_STRICT_NO_UPTREND,4766,1.506,1.777,1.416,71.7,40.3,True,False,False,NEED_MORE_DATA
+GATE_6B_DOWNTREND_ONLY,3373,1.722,1.725,1.416,80.0,25.9,True,False,False,NEED_MORE_DATA
+GATE_6C_SELLER_CONTROL_STRICT,8179,1.308,1.503,1.416,40.7,65.3,False,False,False,REJECT
+GATE_6D_NO_BOUNCE_NO_CHOP,12070,1.31,1.453,1.416,4.2,93.1,False,False,False,REJECT
+GATE_6E_COMBINED_STRICT,2405,2.1,2.16,1.416,85.1,18.1,True,False,False,NEED_MORE_DATA

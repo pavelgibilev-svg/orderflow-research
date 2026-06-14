@@ -1,0 +1,7 @@
+date,bucket,regime_native,day_return_pct,range_pct,feasibility_2pct,feasibility_1pct,fullday_runtime_seconds,zones_total,zones_triggered,zones_reached_raw,unique_reached_moves,duplicate_move_credits,raw_triggered_hit_rate,unique_move_adjusted_hit_rate,direction_LONG,direction_SHORT,long_reached,short_reached,duplicate_suppression_count,status_RESOLVED_REACHED,status_RESOLVED_FAILED,status_INVALIDATED,status_NO_TRIGGER,status_EXPIRED
+2024-01-01,bullish,bullish,4.545,4.901,True,True,3802.4,43,23,13,1,12,0.5652173913043478,0.043478260869565216,21,22,13,0,15210,13,10,17,3,0
+2025-10-01,bullish,bullish,4.002,4.171,True,True,3025.2,41,24,4,1,3,0.16666666666666666,0.041666666666666664,21,20,4,0,15287,4,20,15,2,0
+2025-12-01,bearish,bearish,-4.508,7.317,True,True,6579.7,42,20,11,1,10,0.55,0.05,21,21,0,11,10829,11,9,20,2,0
+2024-10-01,bearish,bearish,-3.973,6.274,True,True,5202.5,38,20,13,1,12,0.65,0.05,19,19,0,13,10744,13,7,17,1,0
+2024-07-01,choppy,choppy,0.216,2.148,True,True,3551.1,17,9,0,0,0,0,0,8,9,0,0,15104,0,9,7,1,0
+2026-04-01,choppy,choppy,-0.237,2.587,True,True,3514.5,30,21,1,1,0,0.047619047619047616,0.047619047619047616,17,13,1,0,12987,1,20,9,0,0

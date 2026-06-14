@@ -1,0 +1,29 @@
+# A. OKX early-May data audit
+
+**Build:** 2026-06-06T15:23:59+00:00
+
+Window regime: **RANGE** (ret -1.3%, range 8.92%). Units: contracts (ctVal 0.01). Cross-venue: NOT AVAILABLE (no Binance early-May).
+
+| date | L2 | rows | trades | rows | crossed% | spread bps | quality |
+|---|:--:|--:|:--:|--:|--:|--:|:--:|
+| 2026-05-02 | EXISTS | None | MISSING | None | 0.0 | 0.0128 | L2_ONLY |
+| 2026-05-03 | EXISTS | None | EXISTS | None | 0.0 | 0.0127 | FULL |
+| 2026-05-04 | EXISTS | None | EXISTS | None | 0.0 | 0.0127 | FULL |
+| 2026-05-05 | EXISTS | None | EXISTS | None | 0.0 | 0.0125 | FULL |
+| 2026-05-06 | EXISTS | None | EXISTS | None | 0.0 | 0.0123 | FULL |
+| 2026-05-07 | EXISTS | None | EXISTS | None | 0.0 | 0.0123 | FULL |
+| 2026-05-08 | EXISTS | None | EXISTS | None | 0.0 | 0.0125 | FULL |
+| 2026-05-09 | EXISTS | None | EXISTS | None | 0.0 | 0.0125 | FULL |
+| 2026-05-10 | EXISTS | None | EXISTS | None | 0.0 | 0.0124 | FULL |
+| 2026-05-11 | CONVERTED | 83908626 | CONVERTED | 3287356 | 0.0 | 0.0122 | FULL |
+| 2026-05-12 | CONVERTED | 77444207 | CONVERTED | 2571268 | 0.0 | 0.0122 | FULL |
+| 2026-05-13 | CONVERTED | 74173712 | CONVERTED | 2430682 | 0.0 | 0.0124 | FULL |
+| 2026-05-14 | CONVERTED | 87262834 | CONVERTED | 2795483 | 0.0 | 0.0126 | FULL |
+| 2026-05-15 | CONVERTED | 86494146 | CONVERTED | 3885236 | 0.0 | 0.0123 | FULL |
+| 2026-05-16 | CONVERTED | 52753479 | CONVERTED | 1911637 | 0.0 | 0.0126 | FULL |
+| 2026-05-17 | CONVERTED | 52131470 | CONVERTED | 1220153 | 0.0 | 0.0128 | FULL |
+| 2026-05-18 | CONVERTED | 98973305 | CONVERTED | 3574518 | 0.0 | 0.0129 | FULL |
+| 2026-05-19 | CONVERTED | 77573932 | CONVERTED | 2831388 | 0.0 | 0.013 | FULL |
+| 2026-05-20 | CONVERTED | 76893465 | CONVERTED | 2293943 | 0.0 | 0.013 | FULL |
+
+Flags: {'OKX_MAY_EARLY_DATA_READY': 'YES', 'TARDIS_USED': 'NO', 'WINDOW_REGIME': 'RANGE', 'WINDOW_RETURN_PCT': -1.3, 'CROSS_VENUE_NOT_AVAILABLE': 'YES'}

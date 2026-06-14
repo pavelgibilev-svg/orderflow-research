@@ -1,0 +1,5 @@
+ruleset,trades,wins,losses,timeouts,winrate_pct,expectancy_after_cost_pct,pf_after_cost,max_consecutive_losses,overlap_with_frozen
+frozen_RS1,29,18,8,3,62.07,0.6475,2.258,3,
+NRS1_A_pctile,29,16,10,3,55.17,0.4061,1.647,3,26
+NRS1_B_zscore,29,16,10,3,55.17,0.4061,1.647,3,25
+NRS1_C_pctile_plus_scorefloor,24,12,9,3,50.0,0.249,1.361,3,21

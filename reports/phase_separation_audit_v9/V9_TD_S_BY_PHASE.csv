@@ -1,0 +1,8 @@
+phase,minutes,tds_activation_rate,gate6A_rate,gate6E_rate,setup_8A_count,random_short_hit2,random_short_pf,gate6A_short_hit2,gate6A_short_pf,entry8A_hit2,entry8A_pf,is_target_phase,is_blocked_phase
+TREND_DOWN_ACTIVE_MARKDOWN,3230,57.6,67.1,29.1,17,34.3,1.622,34.3,1.669,11.8,0.378,True,False
+RANGE_DISTRIBUTION_INTO_DEMAND,2647,35.2,5.7,2.3,276,19.7,1.014,39.5,3.402,25.7,1.751,True,False
+TREND_DOWN_ABSORPTION_REVERSAL,983,29.2,40.6,0.0,16,34.0,1.033,31.3,0.701,43.8,2.646,False,True
+RANGE_ACCUMULATION_UNDER_PRESSURE,4338,26.3,28.9,0.0,192,24.0,0.928,35.3,1.414,21.9,0.69,False,True
+LOW_VOL_NO_CONTROL_CHOP,22241,19.8,10.6,5.2,1172,19.3,2.193,17.3,1.156,20.4,2.24,False,True
+TREND_UP_NO_SHORT,4573,24.5,0.0,0.0,49,22.3,0.916,,,20.4,1.031,False,True
+UNKNOWN,12308,24.2,7.6,6.0,415,26.3,1.262,32.0,1.578,27.0,0.97,False,False

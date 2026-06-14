@@ -1,0 +1,15 @@
+id,statement,verdict
+T1,Good LONG = sell absorption + bid refill + OFI recovery (proxy: aligned taker imb 30m + cand_sell_pressure),n/a
+T2,Good SHORT = buy absorption + ask refill + OFI deterioration,n/a
+T3,"Good zones occur BEFORE impulse, not after prior overextension",supported (BAD has higher abs prior move)
+T4,Strong raw flow appearing late (after 50% of correct move) = anti-feature,supported
+T5,Opposite-direction conflict (active opp zone OR opposite move) kills precision,supported (wrong-dir zones much more often during opposite move)
+T6,"Asia session is genuinely better, not random",supported
+T7,Clean local range / low prior range helps,supported
+T8,High-vol context (local realized vol) hurts; requires local-normalized thresholds,weak (cohen's d small)
+T9,Slow-trigger zones (confirm_to_trigger>60m) useful for watch but bad for trigger entry,diagnostic only
+T10,Duplicate clusters: same-dir-active>1 contains followups but should be deduped,supported: same-dir cluster ratio similar to baseline — dedup helps signal-to-noise
+T11,Good zones are near recent 4h mean/VWAP-proxy,weak
+T12,Wrong-direction zones have identifiable conflict (during opposite move),supported (wrong-direction zones much more often during opposite move)
+T13,"Current engine score_* are candidate-definition, not quality",supported (all |d|<0.1)
+T14,Small confluence isolates high-prob zones,"supported but precision still ~25-30 %, not 70 %"

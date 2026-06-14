@@ -1,0 +1,16 @@
+# C. Per-regime filter research (pooled OKX March + OKX/Binance May)
+
+**Build:** 2026-06-04T14:04:38+00:00
+| filter | regime n | kept | strong_cap | base_strong% | precision | wr% | PF |
+|---|--:|--:|--:|--:|--:|--:|--:|
+| TD_short_continuation | 273 | 133 | 61 | 32.2 | 0.459 | 46.62 | 1.793 |
+| TD_reject_counter_long | 273 | 241 | 79 | 32.2 | 0.328 | 33.61 | 0.97 |
+| TD_reclaim | 273 | 116 | 42 | 32.2 | 0.362 | 36.21 | 0.891 |
+| TD_short_plus_noise_ok | 273 | 82 | 38 | 32.2 | 0.463 | 45.12 | 1.594 |
+| TU_long_continuation | 226 | 122 | 32 | 35.0 | 0.262 | 34.43 | 0.999 |
+| TU_reject_counter_short | 226 | 204 | 71 | 35.0 | 0.348 | 37.75 | 0.979 |
+| TU_long_plus_thin | 226 | 118 | 32 | 35.0 | 0.271 | 35.59 | 1.006 |
+| RANGE_reclaim | 884 | 393 | 106 | 27.6 | 0.27 | 31.3 | 0.718 |
+| RANGE_reclaim_plus_noise_ok | 884 | 280 | 76 | 27.6 | 0.271 | 30.71 | 0.697 |
+| RANGE_all | 884 | 884 | 244 | 27.6 | 0.276 | 32.92 | 0.847 |
+| LOWVOL_all_(no_trade_candidate) | 310 | 310 | 82 | 26.5 | 0.265 | 32.58 | 0.999 |

@@ -1,0 +1,7 @@
+exchange,window_id,net_pct,median_daily_range_pct,max_daily_range_pct,total_volume_btc,trade_count,rv_hourly_proxy_pct,max_down_leg_pct,max_bounce_pct,trend_down_confirmed
+Bybit,W1_NOVEMBER,-8.83,6.23,7.9,528847.86,15447866,0.766,-13.46,15.55,YES
+OKX,W1_NOVEMBER,-8.82,6.21,7.91,53603135.91,21940851,0.764,-13.45,15.54,YES
+Bybit,W3_JANUARY,-11.77,5.49,10.14,428722.72,12840845,0.738,-16.42,19.65,YES
+OKX,W3_JANUARY,-11.79,5.52,10.15,44718910.76,18907394,0.741,-16.43,19.67,YES
+Bybit,W4_APRIL,-12.54,7.29,12.09,1133906.54,13897884,0.945,-16.31,19.49,YES
+OKX,W4_APRIL,-12.46,7.26,12.04,117458638.0,10623216,0.927,-16.23,19.37,YES

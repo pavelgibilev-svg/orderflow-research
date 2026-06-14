@@ -1,0 +1,5 @@
+date,trades,first_price,last_price,high,low,return_pct,range_pct,max_4h_up_pct,max_4h_down_pct,max_8h_up_pct,max_8h_down_pct,max_24h_up_pct,max_24h_down_pct,feasible_2pct_4h,feasible_2pct_8h,feasible_2pct_intraday,regime,recommended_target_pct
+2026-01-01,1056983,87608.30,88800.00,88881.40,87508.40,1.360,1.569,0.764,0.609,1.188,0.609,1.546,0.609,no,no,no,choppy,0.50
+2026-02-01,6759515,78706.70,76931.50,79396.80,75644.00,-2.255,4.961,2.198,2.670,2.198,3.265,2.198,4.458,yes,yes,yes,bearish,2.00
+2026-03-01,5961363,66937.00,65750.00,68189.00,65011.00,-1.773,4.888,3.173,2.918,3.173,3.282,3.173,4.543,yes,yes,yes,bearish,2.00
+2026-04-01,4104211,68241.40,68086.50,69288.00,67534.90,-0.227,2.596,2.372,1.617,2.423,1.809,2.423,1.826,yes,yes,yes,choppy,1.50

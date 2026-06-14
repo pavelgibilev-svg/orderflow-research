@@ -1,0 +1,11 @@
+metric,value
+zones_total,20
+zones_triggered,11
+zones_reached,6
+hit_rate_among_triggered,0.5454545454545454
+status_RESOLVED_REACHED,6
+direction_SHORT,13
+status_INVALIDATED,7
+direction_LONG,7
+status_RESOLVED_FAILED,5
+status_NO_TRIGGER,2
