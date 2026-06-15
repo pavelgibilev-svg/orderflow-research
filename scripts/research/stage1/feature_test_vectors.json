@@ -1,0 +1,777 @@
+{
+  "metadata": {
+    "schema_version": 1,
+    "source_file": "(synthetic)",
+    "instrument": "Bybit BTCUSDT perpetual (synthetic books)",
+    "reference_impl": "scripts/research/stage1/features_geometry.py::book_geometry_snapshot",
+    "generated_by": "scripts/research/stage1/test_vectors_gen.py",
+    "tick_size": 0.1,
+    "max_depth_pct": 0.005,
+    "exp_decay_lambda": 10.0,
+    "size_multiplier": 1.0,
+    "decimals": 6,
+    "fields": [
+      "mass_bid",
+      "com_bid_ticks",
+      "variance_bid",
+      "mass_ask",
+      "com_ask_ticks",
+      "variance_ask",
+      "imbalance_inv",
+      "imbalance_exp"
+    ],
+    "window_rule": "keep level iff |price - mid| / mid <= max_depth_pct (boundary INCLUSIVE)",
+    "null_means": "NaN: undefined side (mass==0 / empty book / zero imbalance denominator)",
+    "python_version": "3.13.7",
+    "numpy_version": "2.2.6",
+    "polars_version": null,
+    "real_book_parity_note": "Cross-implementation parity verified separately: book_reconstruction batch-vs-reference maxdiff == 2.18e-11 over 86,401 live snapshots (2026-06-02 BTCUSDT perp)."
+  },
+  "test_cases": [
+    {
+      "case_id": "symmetric_book_quiet",
+      "scenario": "§6.1 symmetric book, quiet -> imbalance ~ 0 (exactly 0 here)",
+      "timestamp_ms": 1759104000000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            1.5
+          ],
+          [
+            59999.9,
+            2.3
+          ],
+          [
+            59999.8,
+            1.0
+          ],
+          [
+            59999.7,
+            0.8
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            1.5
+          ],
+          [
+            60000.2,
+            2.3
+          ],
+          [
+            60000.3,
+            1.0
+          ],
+          [
+            60000.4,
+            0.8
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 5.6,
+        "com_bid_ticks": 1.696429,
+        "variance_bid": 0.979273,
+        "mass_ask": 5.6,
+        "com_ask_ticks": 1.696429,
+        "variance_ask": 0.979273,
+        "imbalance_inv": 0.0,
+        "imbalance_exp": 0.0
+      }
+    },
+    {
+      "case_id": "strong_bid_skew",
+      "scenario": "§6.2 massive bid defense below -> imbalance_inv >> 0",
+      "timestamp_ms": 1759104001000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            50.0
+          ],
+          [
+            59999.9,
+            40.0
+          ],
+          [
+            59999.8,
+            30.0
+          ],
+          [
+            59999.7,
+            20.0
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            2.0
+          ],
+          [
+            60000.2,
+            1.5
+          ],
+          [
+            60000.3,
+            1.0
+          ],
+          [
+            60000.4,
+            0.8
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 140.0,
+        "com_bid_ticks": 1.642857,
+        "variance_bid": 1.122449,
+        "mass_ask": 5.3,
+        "com_ask_ticks": 1.613208,
+        "variance_ask": 1.156995,
+        "imbalance_inv": 0.925962,
+        "imbalance_exp": 0.926828
+      }
+    },
+    {
+      "case_id": "strong_ask_skew",
+      "scenario": "§6.3 massive ask resistance above -> imbalance_inv << 0",
+      "timestamp_ms": 1759104002000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            2.0
+          ],
+          [
+            59999.9,
+            1.5
+          ],
+          [
+            59999.8,
+            1.0
+          ],
+          [
+            59999.7,
+            0.8
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            50.0
+          ],
+          [
+            60000.2,
+            40.0
+          ],
+          [
+            60000.3,
+            30.0
+          ],
+          [
+            60000.4,
+            20.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 5.3,
+        "com_bid_ticks": 1.613208,
+        "variance_bid": 1.156995,
+        "mass_ask": 140.0,
+        "com_ask_ticks": 1.642857,
+        "variance_ask": 1.122449,
+        "imbalance_inv": -0.925962,
+        "imbalance_exp": -0.926828
+      }
+    },
+    {
+      "case_id": "empty_bid_side",
+      "scenario": "§6.4 bids empty -> best_bid NaN -> mid NaN -> all fields undefined",
+      "timestamp_ms": 1759104003000,
+      "book_snapshot": {
+        "bids": [],
+        "asks": [
+          [
+            60000.1,
+            1.8
+          ],
+          [
+            60000.2,
+            2.1
+          ],
+          [
+            60000.3,
+            1.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 0.0,
+        "com_bid_ticks": null,
+        "variance_bid": null,
+        "mass_ask": 0.0,
+        "com_ask_ticks": null,
+        "variance_ask": null,
+        "imbalance_inv": null,
+        "imbalance_exp": null
+      }
+    },
+    {
+      "case_id": "empty_ask_side",
+      "scenario": "§6.4 mirror: asks empty -> mid NaN -> all fields undefined",
+      "timestamp_ms": 1759104004000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            1.8
+          ],
+          [
+            59999.9,
+            2.1
+          ],
+          [
+            59999.8,
+            1.0
+          ]
+        ],
+        "asks": []
+      },
+      "expected_features": {
+        "mass_bid": 0.0,
+        "com_bid_ticks": null,
+        "variance_bid": null,
+        "mass_ask": 0.0,
+        "com_ask_ticks": null,
+        "variance_ask": null,
+        "imbalance_inv": null,
+        "imbalance_exp": null
+      }
+    },
+    {
+      "case_id": "narrow_spread_1tick",
+      "scenario": "§6.5 very narrow spread (1 tick)",
+      "timestamp_ms": 1759104005000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            3.0
+          ],
+          [
+            59999.9,
+            2.0
+          ],
+          [
+            59999.8,
+            1.0
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            3.0
+          ],
+          [
+            60000.2,
+            2.0
+          ],
+          [
+            60000.3,
+            1.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 6.0,
+        "com_bid_ticks": 1.166667,
+        "variance_bid": 0.555556,
+        "mass_ask": 6.0,
+        "com_ask_ticks": 1.166667,
+        "variance_ask": 0.555556,
+        "imbalance_inv": 0.0,
+        "imbalance_exp": 0.0
+      }
+    },
+    {
+      "case_id": "wide_spread_200ticks",
+      "scenario": "§6.6 wide spread (200 ticks), mid 60000",
+      "timestamp_ms": 1759104006000,
+      "book_snapshot": {
+        "bids": [
+          [
+            59990.0,
+            3.0
+          ],
+          [
+            59989.9,
+            2.0
+          ],
+          [
+            59989.8,
+            1.0
+          ]
+        ],
+        "asks": [
+          [
+            60010.0,
+            3.0
+          ],
+          [
+            60010.1,
+            2.0
+          ],
+          [
+            60010.2,
+            1.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 6.0,
+        "com_bid_ticks": 100.666667,
+        "variance_bid": 0.555556,
+        "mass_ask": 6.0,
+        "com_ask_ticks": 100.666667,
+        "variance_ask": 0.555556,
+        "imbalance_inv": 0.0,
+        "imbalance_exp": 0.0
+      }
+    },
+    {
+      "case_id": "post_liquidation_proxy",
+      "scenario": "§6.7 thinned ask after a sweep (SHAPE proxy; no liquidations feed on disk)",
+      "timestamp_ms": 1759104007000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            8.0
+          ],
+          [
+            59999.9,
+            6.0
+          ],
+          [
+            59999.8,
+            5.0
+          ],
+          [
+            59999.7,
+            4.0
+          ],
+          [
+            59999.6,
+            3.0
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            0.3
+          ],
+          [
+            60000.2,
+            0.2
+          ],
+          [
+            60000.3,
+            0.1
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 26.0,
+        "com_bid_ticks": 2.038462,
+        "variance_bid": 1.863905,
+        "mass_ask": 0.6,
+        "com_ask_ticks": 1.166667,
+        "variance_ask": 0.555556,
+        "imbalance_inv": 0.943406,
+        "imbalance_exp": 0.951184
+      }
+    },
+    {
+      "case_id": "fast_move_up_proxy",
+      "scenario": "§6.8 fast up-move, asks pulled, spread gapped (SHAPE proxy)",
+      "timestamp_ms": 1759104008000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            5.0
+          ],
+          [
+            59999.9,
+            4.0
+          ],
+          [
+            59999.8,
+            3.0
+          ]
+        ],
+        "asks": [
+          [
+            60000.5,
+            0.5
+          ],
+          [
+            60000.6,
+            0.4
+          ],
+          [
+            60000.7,
+            0.3
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 12.0,
+        "com_bid_ticks": 3.333333,
+        "variance_bid": 0.638889,
+        "mass_ask": 1.2,
+        "com_ask_ticks": 3.333333,
+        "variance_ask": 0.638889,
+        "imbalance_inv": 0.818182,
+        "imbalance_exp": 0.818182
+      }
+    },
+    {
+      "case_id": "funding_flip_proxy",
+      "scenario": "§6.9 neutral active book (SHAPE only; no derivative_ticker/funding feed on disk)",
+      "timestamp_ms": 1759104009000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            2.0
+          ],
+          [
+            59999.9,
+            3.5
+          ],
+          [
+            59999.8,
+            1.0
+          ],
+          [
+            59999.7,
+            0.7
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            1.8
+          ],
+          [
+            60000.2,
+            3.2
+          ],
+          [
+            60000.3,
+            1.4
+          ],
+          [
+            60000.4,
+            0.9
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 7.2,
+        "com_bid_ticks": 1.555556,
+        "variance_bid": 0.802469,
+        "mass_ask": 7.3,
+        "com_ask_ticks": 1.691781,
+        "variance_ask": 0.894727,
+        "imbalance_inv": 0.015125,
+        "imbalance_exp": -0.000323
+      }
+    },
+    {
+      "case_id": "active_midday_mixed",
+      "scenario": "§6.10 active mid-day mixed book",
+      "timestamp_ms": 1759104010000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            1.2
+          ],
+          [
+            59999.9,
+            4.5
+          ],
+          [
+            59999.8,
+            0.3
+          ],
+          [
+            59999.7,
+            2.8
+          ],
+          [
+            59999.6,
+            1.1
+          ],
+          [
+            59999.5,
+            0.6
+          ]
+        ],
+        "asks": [
+          [
+            60000.2,
+            0.9
+          ],
+          [
+            60000.3,
+            3.1
+          ],
+          [
+            60000.4,
+            1.7
+          ],
+          [
+            60000.5,
+            0.4
+          ],
+          [
+            60000.6,
+            2.2
+          ],
+          [
+            60000.7,
+            1.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 10.5,
+        "com_bid_ticks": 2.990476,
+        "variance_bid": 2.085624,
+        "mass_ask": 9.3,
+        "com_ask_ticks": 3.311828,
+        "variance_ask": 2.580183,
+        "imbalance_inv": 0.092003,
+        "imbalance_exp": 0.075371
+      }
+    },
+    {
+      "case_id": "boundary_level_inclusive",
+      "scenario": "mid 60000, window 300.0: level at 59700.0 (|d|/mid==0.5%) IN, 59699.9 OUT",
+      "timestamp_ms": 1759104011000,
+      "book_snapshot": {
+        "bids": [
+          [
+            59999.9,
+            1.0
+          ],
+          [
+            59700.0,
+            5.0
+          ],
+          [
+            59699.9,
+            9.9
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            1.0
+          ],
+          [
+            60300.0,
+            5.0
+          ],
+          [
+            60300.1,
+            9.9
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 6.0,
+        "com_bid_ticks": 2500.166667,
+        "variance_bid": 1249166.805556,
+        "mass_ask": 6.0,
+        "com_ask_ticks": 2500.166667,
+        "variance_ask": 1249166.805556,
+        "imbalance_inv": 0.0,
+        "imbalance_exp": 0.0
+      }
+    },
+    {
+      "case_id": "far_levels_excluded",
+      "scenario": "huge levels far beyond the window must be dropped, not summed",
+      "timestamp_ms": 1759104012000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            1.0
+          ],
+          [
+            59999.9,
+            1.0
+          ],
+          [
+            58000.0,
+            9999.0
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            1.0
+          ],
+          [
+            60000.2,
+            1.0
+          ],
+          [
+            62000.0,
+            9999.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 2.0,
+        "com_bid_ticks": 1.0,
+        "variance_bid": 0.25,
+        "mass_ask": 2.0,
+        "com_ask_ticks": 1.0,
+        "variance_ask": 0.25,
+        "imbalance_inv": 0.0,
+        "imbalance_exp": 0.0
+      }
+    },
+    {
+      "case_id": "two_levels_lowcount",
+      "scenario": "§4.1 <3 levels: variance still computed (low-count, documented)",
+      "timestamp_ms": 1759104013000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            2.0
+          ],
+          [
+            59999.9,
+            1.0
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            2.0
+          ],
+          [
+            60000.2,
+            1.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 3.0,
+        "com_bid_ticks": 0.833333,
+        "variance_bid": 0.222222,
+        "mass_ask": 3.0,
+        "com_ask_ticks": 0.833333,
+        "variance_ask": 0.222222,
+        "imbalance_inv": 0.0,
+        "imbalance_exp": 0.0
+      }
+    },
+    {
+      "case_id": "single_level_side",
+      "scenario": "single bid level -> variance_bid == 0 (one point)",
+      "timestamp_ms": 1759104014000,
+      "book_snapshot": {
+        "bids": [
+          [
+            60000.0,
+            3.0
+          ]
+        ],
+        "asks": [
+          [
+            60000.1,
+            1.0
+          ],
+          [
+            60000.2,
+            1.0
+          ],
+          [
+            60000.3,
+            1.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 3.0,
+        "com_bid_ticks": 0.5,
+        "variance_bid": 0.0,
+        "mass_ask": 3.0,
+        "com_ask_ticks": 1.5,
+        "variance_ask": 0.666667,
+        "imbalance_inv": 0.193182,
+        "imbalance_exp": 0.048297
+      }
+    },
+    {
+      "case_id": "huge_spread_empty_window",
+      "scenario": "spread so wide both best levels fall outside the 0.5% window -> both mass 0, imbalance null",
+      "timestamp_ms": 1759104015000,
+      "book_snapshot": {
+        "bids": [
+          [
+            59000.0,
+            5.0
+          ]
+        ],
+        "asks": [
+          [
+            61000.0,
+            5.0
+          ]
+        ]
+      },
+      "expected_features": {
+        "mass_bid": 0.0,
+        "com_bid_ticks": null,
+        "variance_bid": null,
+        "mass_ask": 0.0,
+        "com_ask_ticks": null,
+        "variance_ask": null,
+        "imbalance_inv": null,
+        "imbalance_exp": null
+      }
+    },
+    {
+      "case_id": "empty_both_sides",
+      "scenario": "both sides empty -> every field null",
+      "timestamp_ms": 1759104016000,
+      "book_snapshot": {
+        "bids": [],
+        "asks": []
+      },
+      "expected_features": {
+        "mass_bid": 0.0,
+        "com_bid_ticks": null,
+        "variance_bid": null,
+        "mass_ask": 0.0,
+        "com_ask_ticks": null,
+        "variance_ask": null,
+        "imbalance_inv": null,
+        "imbalance_exp": null
+      }
+    }
+  ]
+}
