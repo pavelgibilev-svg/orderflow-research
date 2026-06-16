@@ -1,0 +1,27 @@
+{
+  "name": "fast-l2-parser",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Specialized high-throughput streaming parser for incremental_book_L2.csv.gz market data.",
+  "scripts": {
+    "bench": "tsx src/benchmark.ts",
+    "bench:book": "tsx src/order-book-benchmark.ts",
+    "gen": "tsx src/gen-sample.ts",
+    "gen:book": "tsx src/gen-book-sample.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "dependencies": {}
+}

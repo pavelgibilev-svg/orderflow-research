@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orderbook-builder"
+version = "1.0.0"
+description = "Local L2 order-book reconstructor (consumer of EventDispatcher events)."
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.24", "sortedcontainers>=2.4"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["orderbook"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

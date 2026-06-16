@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chrono-dispatcher"
+version = "1.0.0"
+description = "Deterministic K-way event replay (chronology dispatcher) for an HFT backtester."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+# Needed only for the file parsers (TardisGzipSource) and the benchmark.
+# The merge core + the bulk of the test suite run on stdlib alone.
+parsers = ["pandas>=1.5"]
+test = ["pytest>=7", "pandas>=1.5"]
+
+[tool.setuptools]
+packages = ["chrono_dispatcher"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
