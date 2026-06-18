@@ -21,6 +21,7 @@
     "live:replay:from-db": "tsx src/cli/backtestDb.ts",
     "backtest:db": "tsx src/cli/backtestDb.ts",
     "backtest:okx-technical": "tsx src/cli/backtestOkxTechnical.ts",
+    "export:zone-features": "tsx src/cli/exportZoneFeatures.ts",
     "download:tardis-2026": "bash scripts/download-tardis-2026-ytd-except-may.sh",
     "test": "vitest run",
     "test:watch": "vitest",

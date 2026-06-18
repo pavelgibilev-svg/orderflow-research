@@ -27,6 +27,27 @@ export function canTransition(from: ZoneStatus, to: ZoneStatus): boolean {
   return ALLOWED[from].includes(to);
 }
 
+/**
+ * Additive, NON-BEHAVIORAL observer hook (Part D, exportZoneFeatures).
+ *
+ * When set, the callback is invoked STRICTLY AFTER a transition has been
+ * committed (status written, side effects applied, return value fixed) and only
+ * for a *successful* transition. It cannot influence the transition decision,
+ * `ALLOWED`, or the return value — it is a read-only notification. Default: none
+ * (when unset, `transition` is byte-for-byte the original behaviour).
+ *
+ * NOTE: RESOLVED_REACHED / RESOLVED_FAILED are set directly by TargetChecker
+ * (targetChecker.ts:130/139), bypassing `transition`, so they do NOT fire this
+ * observer — consumers must collect resolved zones after TargetChecker runs.
+ */
+export type TransitionObserver = (zone: Zone, to: ZoneStatus, reason: ZoneReason) => void;
+
+let transitionObserver: TransitionObserver | null = null;
+
+export function setTransitionObserver(cb: TransitionObserver | null): void {
+  transitionObserver = cb;
+}
+
 export function transition(zone: Zone, to: ZoneStatus, reason: ZoneReason): boolean {
   if (!canTransition(zone.status, to)) return false;
   zone.status = to;
@@ -36,5 +57,8 @@ export function transition(zone: Zone, to: ZoneStatus, reason: ZoneReason): bool
   else if (to === "RESOLVED_REACHED" || to === "RESOLVED_FAILED" || to === "EXPIRED" || to === "INVALIDATED") {
     zone.resolvedTs = reason.ts;
   }
+  // Observer fires only on a successful, already-committed transition; it is
+  // read-only and does not affect the outcome above.
+  if (transitionObserver !== null) transitionObserver(zone, to, reason);
   return true;
 }
